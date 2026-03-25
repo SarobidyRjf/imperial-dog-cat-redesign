@@ -42,6 +42,10 @@ assets:
         path: assets/css/header.css
         media: all
         priority: 250
+      - id: imperial-footer
+        path: assets/css/footer.css
+        media: all
+        priority: 260
       - id: imperial-custom
         path: assets/css/custom.css
         media: all

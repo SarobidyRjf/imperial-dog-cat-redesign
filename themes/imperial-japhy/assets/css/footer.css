@@ -1,0 +1,295 @@
+/* ============================================================
+   FOOTER — Japhy.fr Style
+   Fond noir #101820, colonnes, newsletter, social
+   ============================================================ */
+
+/* ===== Hide Classic footer ===== */
+#footer .footer-container,
+#footer > .container {
+  display: none !important;
+}
+
+/* ===== Footer Before (reassurance) ===== */
+.jp-footer-before {
+  background: #FFFFFF;
+  padding: 40px 0;
+}
+
+.jp-footer-before__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* ===== Main Footer ===== */
+.jp-footer {
+  background-color: #101820 !important;
+  color: #FFFFFF;
+  font-family: 'Outfit', sans-serif;
+}
+
+.jp-footer__main {
+  padding: 60px 0 40px;
+}
+
+.jp-footer__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.jp-footer__main .jp-footer__container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* ===== Columns ===== */
+.jp-footer__col {
+  flex: 1;
+  min-width: 150px;
+}
+
+.jp-footer__col--brand {
+  flex: 1.5;
+  min-width: 220px;
+}
+
+.jp-footer__col--newsletter {
+  flex: 1.5;
+  min-width: 250px;
+}
+
+/* ===== Logo ===== */
+.jp-footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.jp-footer__logo-img {
+  height: 40px;
+  width: auto;
+  filter: brightness(0) invert(1);
+}
+
+/* ===== Contact Info ===== */
+.jp-footer__address,
+.jp-footer__contact,
+.jp-footer__hours {
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.jp-footer__contact a {
+  color: rgba(255, 255, 255, 0.7) !important;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.jp-footer__contact a:hover {
+  color: #FFFFFF !important;
+}
+
+/* ===== Column Titles ===== */
+.jp-footer__title {
+  font-family: 'Outfit', sans-serif !important;
+  font-size: 15px;
+  font-weight: 700;
+  color: #FFFFFF !important;
+  margin-bottom: 16px;
+  letter-spacing: 0;
+}
+
+/* ===== Navigation Links ===== */
+.jp-footer__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.jp-footer__nav a {
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.7) !important;
+  text-decoration: none !important;
+  transition: color 0.2s ease;
+  line-height: 1.4;
+}
+
+.jp-footer__nav a:hover {
+  color: #FFFFFF !important;
+}
+
+/* ===== Newsletter ===== */
+.jp-footer__newsletter-text {
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 16px;
+  line-height: 1.4;
+}
+
+.jp-footer__newsletter-row {
+  display: flex;
+  gap: 8px;
+}
+
+.jp-footer__newsletter-input {
+  flex: 1;
+  height: 44px;
+  padding: 0 16px;
+  background: #28323D;
+  border: 1px solid #28323D;
+  border-radius: 26px;
+  color: #FFFFFF;
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.jp-footer__newsletter-input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.jp-footer__newsletter-input:focus {
+  border-color: #9BCBEB;
+}
+
+.jp-footer__newsletter-btn {
+  height: 44px;
+  padding: 0 24px;
+  background: #FFFFFF;
+  color: #101820;
+  border: none;
+  border-radius: 26px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  white-space: nowrap;
+}
+
+.jp-footer__newsletter-btn:hover {
+  background: #F1F3F5;
+}
+
+/* ===== Footer Bottom ===== */
+.jp-footer__bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px 0;
+}
+
+.jp-footer__bottom-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.jp-footer__copyright {
+  font-size: 13px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.jp-footer__legal {
+  display: flex;
+  gap: 20px;
+}
+
+.jp-footer__legal a {
+  font-size: 13px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.5) !important;
+  text-decoration: none !important;
+  transition: color 0.2s ease;
+  white-space: nowrap;
+}
+
+.jp-footer__legal a:hover {
+  color: #FFFFFF !important;
+}
+
+/* ===== Social Icons ===== */
+.jp-footer__social {
+  display: flex;
+  gap: 12px;
+}
+
+.jp-footer__social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  color: rgba(255, 255, 255, 0.5) !important;
+  text-decoration: none !important;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.jp-footer__social-link:hover {
+  color: #FFFFFF !important;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.jp-footer__social-link svg {
+  fill: currentColor;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 991px) {
+  .jp-footer__main .jp-footer__container {
+    gap: 30px;
+  }
+
+  .jp-footer__col {
+    min-width: 140px;
+  }
+
+  .jp-footer__col--brand,
+  .jp-footer__col--newsletter {
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .jp-footer__main {
+    padding: 40px 0 30px;
+  }
+
+  .jp-footer__container {
+    padding: 0 20px;
+  }
+
+  .jp-footer__main .jp-footer__container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .jp-footer__col {
+    min-width: 100%;
+  }
+
+  .jp-footer__bottom-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .jp-footer__legal {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .jp-footer__social {
+    justify-content: center;
+  }
+}
