@@ -3,14 +3,8 @@
  * Fond noir #101820, 4 colonnes, newsletter, social, copyright
  *}
 
-{* ===== FOOTER BEFORE (reassurance etc.) ===== *}
-{block name='hook_footer_before'}
-  <div class="jp-footer-before">
-    <div class="jp-footer-before__inner">
-      {hook h='displayFooterBefore'}
-    </div>
-  </div>
-{/block}
+{* Footer before hook hidden — content integrated elsewhere *}
+{block name='hook_footer_before'}{/block}
 
 {* ===== MAIN FOOTER ===== *}
 <footer class="jp-footer">

@@ -1,11 +1,11 @@
 /* ============================================================
-   HEADER — Japhy.fr Style
+   HEADER — Imperial Forest/Gold Theme
    ============================================================ */
 
 /* ===== PROMO BAR ===== */
 .jp-promo-bar {
-  background-color: #9BCBEB;
-  color: #101820;
+  background-color: #1b3022;
+  color: rgba(255,255,255,.7);
   text-align: center;
   padding: 10px 20px;
   font-family: 'Outfit', sans-serif;
@@ -16,14 +16,35 @@
   z-index: 8000;
 }
 
+.jp-promo-bar strong {
+  color: #e6b86a;
+  font-weight: 700;
+}
+
 .jp-promo-bar a {
-  color: #101820;
+  color: #e6b86a;
   font-weight: 700;
   text-decoration: underline;
 }
 
 .jp-promo-bar a:hover {
-  color: #28323D;
+  color: #fff;
+}
+
+.promo-close {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+  color: rgba(255,255,255,.5);
+  transition: color 0.2s ease;
+}
+
+.promo-close:hover {
+  color: #fff;
 }
 
 /* ===== HEADER WRAPPER (promo + header combined, fixed) ===== */
@@ -46,9 +67,11 @@
 
 /* ===== MAIN HEADER ===== */
 .jp-header {
-  background: #FFFFFF !important;
+  background: rgba(245,240,232,.96) !important;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   width: 100% !important;
-  border-bottom: 1px solid #F1F3F5;
+  border-bottom: 1px solid rgba(74,124,89,.15);
 }
 
 .jp-header__container {
@@ -127,19 +150,20 @@
   font-family: 'Outfit', sans-serif;
   font-size: 15px;
   font-weight: 400;
-  color: #101820;
+  color: #6b7068;
   text-decoration: none;
   transition: color 0.2s ease;
   white-space: nowrap;
 }
 
 .jp-nav__link:hover {
-  color: #28323D;
+  color: #1b3022;
   text-decoration: none;
 }
 
 .jp-nav__link--active {
   font-weight: 700;
+  color: #1b3022;
 }
 
 .jp-nav__arrow {
@@ -170,9 +194,9 @@
 }
 
 .jp-dropdown__inner {
-  background: #FFFFFF;
-  border-radius: 12px;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(17,26,20,.12);
   padding: 12px 8px;
   min-width: 220px;
 }
@@ -183,15 +207,15 @@
   font-family: 'Outfit', sans-serif;
   font-size: 14px;
   font-weight: 300;
-  color: #101820;
+  color: #6b7068;
   text-decoration: none;
   border-radius: 8px;
-  transition: background-color 0.15s ease;
+  transition: background-color 0.15s ease, color 0.15s ease;
 }
 
 .jp-dropdown__link:hover {
-  background-color: #F1F3F5;
-  color: #101820;
+  background-color: #f5f0e8;
+  color: #1b3022;
   text-decoration: none;
 }
 
@@ -214,45 +238,47 @@
   width: 200px;
   height: 40px;
   padding: 0 40px 0 16px;
-  border: 1.5px solid #DFE4E9;
+  border: 1.5px solid rgba(74,124,89,.15);
   border-radius: 26px;
-  background: #F1F3F5;
+  background: rgba(245,240,232,.5);
   font-family: 'Outfit', sans-serif;
   font-size: 14px;
   font-weight: 300;
-  color: #101820;
+  color: #1b3022;
   outline: none;
   transition: border-color 0.2s ease, background-color 0.2s ease, width 0.3s ease;
 }
 
 .jp-search__input:focus {
-  border-color: #9BCBEB;
+  border-color: #c8913a;
   background: #FFFFFF;
   width: 260px;
 }
 
 .jp-search__input::placeholder {
-  color: #808B96;
+  color: #6b7068;
 }
 
 .jp-search__btn {
   position: absolute;
-  right: 10px;
+  right: 4px;
   top: 50%;
   transform: translateY(-50%);
-  background: none;
+  background: #1b3022;
   border: none;
   cursor: pointer;
-  color: #808B96;
-  padding: 4px;
+  color: #fff;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: color 0.2s ease;
+  transition: background-color 0.2s ease;
 }
 
 .jp-search__btn:hover {
-  color: #101820;
+  background: #2a4a33;
 }
 
 /* Account & Cart icons */
@@ -262,16 +288,18 @@
   justify-content: center;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  color: #101820;
+  border-radius: 10px;
+  border: 1.5px solid rgba(74,124,89,.15);
+  color: #1b3022;
   text-decoration: none;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
 .jp-header__icon-link:hover {
-  background-color: #F1F3F5;
+  background-color: #f5f0e8;
+  border-color: rgba(74,124,89,.3);
   text-decoration: none;
-  color: #101820;
+  color: #1b3022;
 }
 
 /* Cart count badge */
@@ -281,9 +309,9 @@
 
 .jp-header__cart-count {
   position: absolute;
-  top: 2px;
-  right: 2px;
-  background: #101820;
+  top: -4px;
+  right: -4px;
+  background: #c8913a;
   color: #FFFFFF;
   font-size: 10px;
   font-weight: 700;
@@ -324,7 +352,7 @@
   display: block;
   width: 100%;
   height: 2px;
-  background: #101820;
+  background: #1b3022;
   border-radius: 2px;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -386,14 +414,14 @@
   align-items: center;
   justify-content: space-between;
   padding: 16px 20px;
-  border-bottom: 1px solid #DFE4E9;
+  border-bottom: 1px solid rgba(74,124,89,.15);
 }
 
 .jp-mobile-menu__close {
   background: none;
   border: none;
   cursor: pointer;
-  color: #101820;
+  color: #1b3022;
   padding: 4px;
   display: flex;
 }
@@ -419,7 +447,7 @@
   font-family: 'Outfit', sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color: #101820;
+  color: #1b3022;
   text-decoration: none;
   border: none;
   background: none;
@@ -430,30 +458,30 @@
 }
 
 .jp-mobile-menu__link:hover {
-  background-color: #F1F3F5;
+  background-color: #f5f0e8;
   text-decoration: none;
-  color: #101820;
+  color: #1b3022;
 }
 
 .jp-mobile-menu__link--cta {
   margin: 10px 20px;
   width: auto;
-  background: #101820;
-  color: #FFFFFF;
+  background: #1b3022;
+  color: #e6b86a;
   border-radius: 26px;
   justify-content: center;
   font-weight: 700;
 }
 
 .jp-mobile-menu__link--cta:hover {
-  background: #28323D;
-  color: #FFFFFF;
+  background: #2a4a33;
+  color: #e6b86a;
 }
 
 .jp-mobile-menu__sub {
   display: none;
   padding-left: 20px;
-  background: #F9FAFB;
+  background: #f5f0e8;
 }
 
 .jp-mobile-menu__group.is-open .jp-mobile-menu__sub {
@@ -470,19 +498,19 @@
   font-family: 'Outfit', sans-serif;
   font-size: 14px;
   font-weight: 300;
-  color: #101820;
+  color: #1b3022;
   text-decoration: none;
   transition: background-color 0.15s ease;
 }
 
 .jp-mobile-menu__sublink:hover {
-  background: #F1F3F5;
+  background: rgba(74,124,89,.15);
   text-decoration: none;
 }
 
 .jp-mobile-menu__footer {
   padding: 16px 20px;
-  border-top: 1px solid #DFE4E9;
+  border-top: 1px solid rgba(74,124,89,.15);
 }
 
 /* ===== RESPONSIVE ===== */
@@ -554,8 +582,8 @@
 .jp-header__cta,
 .jp-header__cta:link,
 .jp-header__cta:visited {
-  background-color: #101820 !important;
-  color: #FFFFFF !important;
+  background-color: #1b3022 !important;
+  color: #e6b86a !important;
   border: none !important;
   border-radius: 26px !important;
   font-family: 'Outfit', sans-serif !important;
@@ -570,8 +598,8 @@
 .jp-header__cta:hover,
 .jp-header__cta:focus,
 .jp-header__cta:active {
-  background-color: #28323D !important;
-  color: #FFFFFF !important;
+  background-color: #2a4a33 !important;
+  color: #e6b86a !important;
   text-decoration: none !important;
   opacity: 1 !important;
 }

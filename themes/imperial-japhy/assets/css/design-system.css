@@ -11,9 +11,11 @@
   /* --- Colors --- */
   --jp-dark: #101820;
   --jp-dark-hover: #28323D;
-  --jp-white: #FFFFFF;
+  --jp-white: #f5f0e8;
+  --jp-warm-bg: #F7F1EB;
   --jp-bg-light: #F1F3F5;
   --jp-border: #DFE4E9;
+  --jp-border-warm: #E1DBD5;
   --jp-text-muted: #808B96;
   --jp-blue: #9BCBEB;
   --jp-blue-light: #CCE4F4;
@@ -26,6 +28,15 @@
   --jp-green-bg: #ECFDF5;
   --jp-red: #F15B5C;
   --jp-red-bg: #FDCFCF;
+  --jp-accent-mustard: #E7C283;
+  --jp-accent-green-soft: #BCDBB4;
+
+  /* --- New Design Palette --- */
+  --forest:#1b3022;--grove:#2a4a33;--fern:#4a7c59;--sage:#7aaa87;
+  --mist:#d8ead9;--cream:#f5f0e8;--parch:#ede5d4;
+  --gold:#c8913a;--amber:#e6b86a;--copper:#9c5a28;
+  --ink:#111a14;--gray:#6b7068;
+  --ease:cubic-bezier(.16,1,.3,1);
 
   /* --- Typography --- */
   --jp-font-primary: 'Outfit', 'Geomanist', sans-serif;
@@ -98,15 +109,16 @@
    3. GLOBAL RESET & BASE STYLES
    ============================================================ */
 body {
-  font-family: var(--jp-font-primary) !important;
+  font-family: 'Outfit', sans-serif;
   font-size: var(--jp-fs-body);
   font-weight: var(--jp-fw-regular);
   line-height: var(--jp-lh);
-  color: var(--jp-dark);
-  background-color: var(--jp-white);
+  color: var(--ink);
+  background: var(--cream);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  transition: color 0.3s ease;
 }
 
 /* ============================================================
@@ -223,7 +235,7 @@ h5, .jp-h5 {
   cursor: pointer;
   border: none;
   border-radius: var(--jp-radius-pill);
-  transition: background-color var(--jp-transition), box-shadow var(--jp-transition);
+  transition: all 0.3s cubic-bezier(.4, 0, .2, 1);
 }
 
 /* Primary button — large (48px) */
@@ -418,6 +430,10 @@ h5, .jp-h5 {
 
 .jp-section-grey {
   background-color: var(--jp-bg-light);
+}
+
+.jp-section--warm {
+  background-color: var(--jp-warm-bg);
 }
 
 .jp-flex {

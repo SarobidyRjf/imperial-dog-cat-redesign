@@ -15,8 +15,9 @@
     {* Promo Bar *}
     <div class="jp-promo-bar" id="promo-bar">
       <div class="jp-promo-bar__inner">
-        &#9889; Livraison offerte dès 49€ d'achat — <a href="{$urls.pages.index}5-chien">Découvrir nos produits</a> &#9889;
+        Offre de bienvenue — <strong>Abonnez-vous à la Newsletter et profitez de −20%</strong> | Livraison offerte dès 49€
       </div>
+      <span class="promo-close" onclick="this.parentElement.style.display='none'">&times;</span>
     </div>
     {* Main Header *}
     <div class="jp-header">

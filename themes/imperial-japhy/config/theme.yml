@@ -30,7 +30,7 @@ assets:
   css:
     all:
       - id: google-fonts-outfit
-        path: https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;700;900&family=Caveat:wght@400;700&display=swap
+        path: https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;700;900&family=Caveat:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap
         server: remote
         media: all
         priority: 100

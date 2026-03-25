@@ -1,6 +1,3 @@
-/**
- * Imperial Dog & Cat — Main JS
- */
 (function() {
   'use strict';
 
@@ -14,9 +11,9 @@
       var currentScrollY = window.pageYOffset || document.documentElement.scrollTop;
 
       if (currentScrollY > 10) {
-        header.classList.add('jp-header-scrolled');
+        header.classList.add('scrolled');
       } else {
-        header.classList.remove('jp-header-scrolled');
+        header.classList.remove('scrolled');
       }
 
       if (currentScrollY > 100) {
@@ -73,7 +70,6 @@
     btn.addEventListener('click', function() {
       var group = this.closest('.jp-mobile-menu__group');
       if (group) {
-        // Close others
         document.querySelectorAll('.jp-mobile-menu__group.is-open').forEach(function(g) {
           if (g !== group) g.classList.remove('is-open');
         });
@@ -92,4 +88,40 @@
     });
     faqItem.classList.toggle('active');
   });
+
+  // ===== SCROLL REVEAL =====
+  var srElements = document.querySelectorAll('.sr');
+  if (srElements.length > 0 && 'IntersectionObserver' in window) {
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('vis');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    srElements.forEach(function(el) {
+      observer.observe(el);
+    });
+  } else {
+    srElements.forEach(function(el) {
+      el.classList.add('vis');
+    });
+  }
+
+  // ===== PRODUCT ADD TO CART ANIMATION =====
+  document.addEventListener('click', function(e) {
+    var addBtn = e.target.closest('.prod-add');
+    if (addBtn) {
+      addBtn.style.transform = 'rotate(90deg) scale(1.2)';
+      setTimeout(function() {
+        addBtn.style.transform = '';
+      }, 300);
+    }
+  });
+
 })();
