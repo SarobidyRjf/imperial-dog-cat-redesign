@@ -1,0 +1,752 @@
+/* ============================================================
+   HOMEPAGE — Japhy.fr Style
+   ============================================================ */
+
+/* ===== FORCE FULL WIDTH on homepage ===== */
+.page-home #wrapper {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.page-home #wrapper > .container,
+.page-home #wrapper > .container-fluid {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.page-home #wrapper .row {
+  margin: 0 !important;
+}
+
+.page-home #content-wrapper {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  flex: none !important;
+}
+
+.page-home #main {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.page-home .page-content,
+.page-home .page-content.card,
+.page-home .page-content.card-block {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+.page-home .page-header,
+.page-home .breadcrumb,
+.page-home .page-footer {
+  display: none !important;
+}
+
+/* Remove any left/right columns on homepage */
+.page-home #left-column,
+.page-home #right-column {
+  display: none !important;
+}
+
+/* Full width wrapper for homepage */
+.jp-full-width {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.jp-full-width #content-wrapper {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.jp-home {
+  overflow: hidden;
+  width: 100%;
+}
+
+/* ===== SECTIONS BASE ===== */
+.jp-section {
+  padding: 70px 0;
+}
+
+.jp-section--grey {
+  background-color: #F1F3F5;
+}
+
+.jp-section--dark {
+  background-color: #101820;
+  color: #FFFFFF;
+}
+
+.jp-section__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.jp-section__title {
+  font-family: 'Outfit', sans-serif !important;
+  font-size: 36px;
+  font-weight: 700;
+  color: #101820;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.jp-section--dark .jp-section__title {
+  color: #FFFFFF;
+}
+
+/* ===== HERO ===== */
+.jp-hero {
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-image: url('../img/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.jp-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0) 100%);
+}
+
+.jp-hero__content {
+  position: relative;
+  z-index: 2;
+  max-width: 550px;
+  margin-left: 10%;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.jp-hero__title {
+  font-family: 'Outfit', sans-serif !important;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.15;
+  color: #101820;
+  margin: 0;
+}
+
+.jp-hero__claims {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.jp-hero__claim {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #FFFFFF;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: #101820;
+  width: fit-content;
+}
+
+/* Hero CTA button — same style as header Questionnaire btn */
+.jp-hero__btn {
+  height: 48px !important;
+  padding: 0 28px !important;
+  font-size: 16px !important;
+  width: fit-content !important;
+}
+
+/* ===== SUR-MESURE (4 features) ===== */
+.jp-surmesure {
+  background: #FFFFFF;
+}
+
+.jp-surmesure__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px 48px;
+}
+
+.jp-surmesure__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.jp-surmesure__icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  background: #F1F3F5;
+}
+
+.jp-surmesure__text h4 {
+  font-family: 'Outfit', sans-serif !important;
+  font-size: 18px;
+  font-weight: 700;
+  color: #101820;
+  margin: 0 0 6px 0;
+}
+
+.jp-surmesure__text p {
+  font-size: 15px;
+  font-weight: 300;
+  color: #808B96;
+  margin: 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 575px) {
+  .jp-surmesure__grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+/* ===== CATEGORIES (Chien / Chat) ===== */
+.jp-categories__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.jp-category-card {
+  display: block;
+  background: #FFFFFF;
+  border-radius: 16px;
+  overflow: hidden;
+  text-decoration: none !important;
+  box-shadow: 0 0 0 1px #DFE4E9;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.jp-category-card:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+  text-decoration: none !important;
+}
+
+.jp-category-card__img {
+  aspect-ratio: 5/4;
+  overflow: hidden;
+}
+
+.jp-category-card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.jp-category-card:hover .jp-category-card__img img {
+  transform: scale(1.05);
+}
+
+.jp-category-card__body {
+  padding: 24px;
+}
+
+.jp-category-card__body h3 {
+  font-family: 'Outfit', sans-serif !important;
+  font-size: 24px;
+  font-weight: 700;
+  color: #101820;
+  margin: 0 0 8px 0;
+}
+
+.jp-category-card__body p {
+  font-size: 15px;
+  font-weight: 300;
+  color: #808B96;
+  margin: 0 0 16px 0;
+}
+
+.jp-category-card__link {
+  font-size: 15px;
+  font-weight: 700;
+  color: #101820;
+}
+
+/* ===== AIDE / QUESTIONNAIRE ===== */
+.jp-help__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.jp-help__text h2 {
+  font-family: 'Outfit', sans-serif !important;
+  font-size: 30px;
+  font-weight: 700;
+  color: #101820;
+  margin: 0 0 12px 0;
+}
+
+.jp-help__text p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #808B96;
+  margin: 0;
+  max-width: 500px;
+}
+
+/* ===== PRODUITS POPULAIRES ===== */
+.jp-products__grid {
+  /* Let PS module render its own grid, we style it with CSS */
+}
+
+/* Style the featured products module output */
+.jp-products .featured-products {
+  padding: 0 !important;
+}
+
+.jp-products .featured-products .products {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 24px !important;
+  justify-items: center;
+}
+
+.jp-products .featured-products h2 {
+  display: none !important; /* We have our own title */
+}
+
+.jp-products .featured-products .all-product-link {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.jp-products .featured-products .all-product-link a {
+  font-family: 'Outfit', sans-serif !important;
+  font-weight: 700;
+  color: #101820;
+}
+
+/* ===== BLOG HOME (3 cards) ===== */
+.jp-blog-home {
+  background: #FFFFFF;
+}
+
+.jp-blog-home__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.jp-blog-card {
+  display: block;
+  background: #FFFFFF;
+  border-radius: 16px;
+  overflow: hidden;
+  text-decoration: none !important;
+  box-shadow: 0 0 0 1px #DFE4E9;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.jp-blog-card:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+  text-decoration: none !important;
+}
+
+.jp-blog-card__img {
+  aspect-ratio: 16/10;
+  overflow: hidden;
+}
+
+.jp-blog-card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.jp-blog-card:hover .jp-blog-card__img img {
+  transform: scale(1.05);
+}
+
+.jp-blog-card__body {
+  padding: 24px;
+}
+
+.jp-blog-card__category {
+  display: inline-block;
+  font-family: 'Outfit', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #9BCBEB;
+  margin-bottom: 8px;
+}
+
+.jp-blog-card__title {
+  font-family: 'Outfit', sans-serif !important;
+  font-size: 20px;
+  font-weight: 700;
+  color: #101820;
+  margin: 0 0 10px 0;
+  line-height: 1.3;
+}
+
+.jp-blog-card__excerpt {
+  font-size: 14px;
+  font-weight: 300;
+  color: #808B96;
+  margin: 0 0 16px 0;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.jp-blog-card__readmore {
+  font-size: 14px;
+  font-weight: 700;
+  color: #101820;
+}
+
+.jp-blog-card:hover .jp-blog-card__readmore {
+  color: #28323D;
+}
+
+.jp-blog-home__cta {
+  text-align: center;
+  margin-top: 40px;
+}
+
+@media (max-width: 991px) {
+  .jp-blog-home__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .jp-blog-home__grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+/* ===== VALEURS (4 cards) ===== */
+.jp-values__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.jp-value-card {
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 32px 24px;
+  text-align: center;
+  box-shadow: 0 0 0 1px #DFE4E9;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.jp-value-card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.jp-value-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #F1F3F5;
+  margin: 0 auto 20px;
+  overflow: hidden;
+}
+
+.jp-value-card__icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.jp-value-card h4 {
+  font-family: 'Outfit', sans-serif !important;
+  font-size: 18px;
+  font-weight: 700;
+  color: #101820;
+  margin: 0 0 12px 0;
+}
+
+.jp-value-card p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #808B96;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* ===== COMMENT CA MARCHE (3 steps) ===== */
+.jp-steps__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.jp-step {
+  text-align: center;
+}
+
+.jp-step__number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #9BCBEB;
+  color: #101820;
+  font-family: 'Outfit', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 auto 20px;
+}
+
+.jp-step__title {
+  font-family: 'Outfit', sans-serif !important;
+  font-size: 20px;
+  font-weight: 700;
+  color: #101820;
+  margin: 0 0 12px 0;
+}
+
+.jp-step__text {
+  font-size: 15px;
+  font-weight: 300;
+  color: #808B96;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.jp-steps__cta {
+  text-align: center;
+}
+
+/* ===== STATS / REASSURANCE ===== */
+.jp-stats__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  text-align: center;
+}
+
+.jp-stat__number {
+  display: block;
+  font-family: 'Outfit', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+}
+
+.jp-stat__label {
+  display: block;
+  font-size: 15px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ===== FAQ ===== */
+.jp-faq__grid {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* FAQ item styles are in design-system.css */
+
+/* ===== CTA FINAL ===== */
+.jp-final-cta {
+  background: #F1F3F5;
+}
+
+.jp-final-cta__inner {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.jp-final-cta__inner h2 {
+  font-family: 'Outfit', sans-serif !important;
+  font-size: 36px;
+  font-weight: 700;
+  color: #101820;
+  margin: 0 0 16px 0;
+}
+
+.jp-final-cta__inner p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #808B96;
+  margin: 0 0 30px 0;
+}
+
+.jp-final-cta__buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 991px) {
+  .jp-hero {
+    min-height: 50vh;
+  }
+
+  .jp-hero__title {
+    font-size: 32px;
+  }
+
+  .jp-hero__content {
+    padding: 40px 30px;
+  }
+
+  .jp-section__title {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  .jp-categories__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .jp-values__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .jp-steps__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .jp-stats__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .jp-products .featured-products .products {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  .jp-help__inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .jp-section {
+    padding: 50px 0;
+  }
+
+  .jp-section__container {
+    padding: 0 20px;
+  }
+
+  .jp-hero {
+    min-height: 60vh;
+  }
+
+  .jp-hero__overlay {
+    background: linear-gradient(180deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.7) 60%, rgba(255,255,255,0.3) 100%);
+  }
+
+  .jp-hero__content {
+    padding: 40px 20px;
+    max-width: 100%;
+  }
+
+  .jp-hero__title {
+    font-size: 26px;
+  }
+
+  .jp-hero__claim {
+    font-size: 13px;
+    padding: 4px 8px;
+  }
+
+  .jp-categories__grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .jp-values__grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .jp-steps__grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .jp-stats__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .jp-stat__number {
+    font-size: 28px;
+  }
+
+  .jp-products .featured-products .products {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12px !important;
+  }
+
+  .jp-final-cta__inner h2 {
+    font-size: 26px;
+  }
+
+  .jp-final-cta__buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .jp-final-cta__buttons .jp-btn {
+    width: 100%;
+  }
+}

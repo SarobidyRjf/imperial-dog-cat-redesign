@@ -119,10 +119,7 @@
           </a>
         </div>
 
-        {* CTA Button (desktop) *}
-        <a href="{$urls.pages.index}questionnaire" class="jp-btn jp-btn-primary jp-header__cta hidden-sm-down">
-          Questionnaire
-        </a>
+        {* CTA Button removed *}
       </div>
 
       {* --- MOBILE HAMBURGER --- *}
