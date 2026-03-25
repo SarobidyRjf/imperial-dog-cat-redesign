@@ -1,0 +1,194 @@
+/* ============================================================
+   HEADER REDESIGN — COUCHE 1 : Fonts & Couleurs uniquement
+   Pas de changement de layout/position
+   ============================================================ */
+
+/* --- Backgrounds blancs --- */
+#header .header-nav { background: #FFFFFF !important; }
+#header .header-nav .container { background: #FFFFFF !important; }
+#header .header-top { background: #FFFFFF !important; }
+#header .header-top .container { background: #FFFFFF !important; color: #101820 !important; }
+#header .header-top .inner { background: #FFFFFF !important; }
+
+/* --- Promo Bar bleu --- */
+#header .header-banner { background-color: #9BCBEB !important; }
+#header .header-banner .inner { background-color: #9BCBEB !important; color: #101820 !important; }
+#header .header-banner .inner .container { background: #9BCBEB !important; }
+
+/* --- Font Outfit sur tout le header --- */
+#header,
+#header .header-nav,
+#header .header-nav a,
+#header .header-top,
+#header .header-top a,
+#header .header-top a[data-depth="0"],
+#header .header-nav .user-info a,
+#header .header-top .user-info a,
+#header .header-nav .blockcart a,
+#header .header-top .blockcart a,
+.leo-megamenu,
+.leo-megamenu .navbar-nav > li > a,
+.leo-megamenu .navbar-nav > li > a > .menu-title,
+.leo-megamenu .dropdown-menu,
+.leo-megamenu .dropdown-menu li a,
+.leo-megamenu .dropdown-menu .menu-title,
+.leo-megamenu .dropdown-menu a > .menu-title,
+.leo-search-widget input[type="text"],
+.leoproductsearch input[type="text"],
+.blockgrouptop a,
+.header-top .groupdrop a {
+  font-family: 'Outfit', sans-serif !important;
+}
+
+/* --- Couleur des liens header : noir au lieu de gris/doré --- */
+.header-nav a,
+#header .header-nav a,
+#header .header-top a,
+#header .header-top a[data-depth="0"],
+#header .header-nav .user-info a,
+#header .header-top .user-info a,
+.leo-megamenu .navbar-nav > li > a,
+.leo-megamenu .navbar-nav > li.active > a,
+#header .material-icons,
+#header .header-nav .material-icons,
+span.hidden-sm-down {
+  color: #101820 !important;
+}
+
+/* --- Hover : gris foncé au lieu de jaune --- */
+.header-nav a:hover,
+#header .header-nav a:hover,
+#header .header-top a:hover,
+#header .header-top a[data-depth="0"]:hover,
+.leo-megamenu .navbar-nav > li > a:hover,
+.leo-megamenu .navbar-nav > li > a:focus,
+.leo-megamenu .navbar-nav > li > a:active,
+.leo-megamenu .navbar-nav > li:hover > a,
+.leo-megamenu .navbar-nav > li:focus > a,
+.leo-megamenu .navbar-nav > li:hover > .caret {
+  color: #28323D !important;
+  background-color: transparent !important;
+}
+
+/* --- Menu items : pas d'uppercase, poids normal --- */
+.leo-megamenu .navbar-nav > li > a,
+#header .header-top a[data-depth="0"] {
+  text-transform: none !important;
+  font-weight: 400 !important;
+  font-size: 15px !important;
+  letter-spacing: 0 !important;
+}
+
+/* --- Dropdown menus : coins arrondis, ombre douce --- */
+.leo-megamenu .dropdown-menu {
+  border: none !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.leo-megamenu .dropdown:hover > .dropdown-menu {
+  border-radius: 12px !important;
+}
+
+/* --- Dropdown items : pas de bordure pointillée, hover gris clair --- */
+.leo-megamenu .dropdown-menu li {
+  border-bottom: none !important;
+}
+
+.leo-megamenu .dropdown-menu li:hover {
+  border-bottom: none !important;
+}
+
+.leo-megamenu .dropdown-menu li a {
+  color: #101820 !important;
+  font-weight: 300 !important;
+  font-size: 14px !important;
+  border-radius: 6px !important;
+  transition: background-color 0.2s ease !important;
+  margin-left: 0 !important;
+}
+
+.leo-megamenu .dropdown-menu li:hover a {
+  background-color: #F1F3F5 !important;
+  color: #101820 !important;
+  margin-left: 0 !important;
+}
+
+/* Supprimer le bullet point animé au hover */
+.leo-megamenu .dropdown-menu li:hover a::before {
+  display: none !important;
+}
+
+/* --- Titres dans les sous-menus --- */
+.leo-megamenu .dropdown-menu .menu-title {
+  font-weight: 700 !important;
+  color: #101820 !important;
+  text-transform: none !important;
+  font-size: 14px !important;
+}
+
+.leo-megamenu .dropdown-menu a > .menu-title {
+  font-weight: 300 !important;
+  color: #101820 !important;
+  text-transform: none !important;
+  font-size: 14px !important;
+}
+
+/* --- Barre de recherche arrondie --- */
+#header .search-widget form input[type=text],
+.leo-search-widget input[type="text"],
+.leoproductsearch input[type="text"] {
+  border: 1.5px solid #DFE4E9 !important;
+  border-radius: 26px !important;
+  background: #F1F3F5 !important;
+  color: #101820 !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
+#header .search-widget form input[type=text]:focus,
+.leo-search-widget input[type="text"]:focus,
+.leoproductsearch input[type="text"]:focus {
+  border-color: #9BCBEB !important;
+  outline: none !important;
+  background: #FFFFFF !important;
+}
+
+/* --- Bouton recherche : noir pill --- */
+#header .search-widget form button[type=submit],
+.leo-search-widget button,
+.leoproductsearch button {
+  background: #101820 !important;
+  color: #FFFFFF !important;
+  border: none !important;
+  border-radius: 26px !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+}
+
+#header .search-widget form button[type=submit]:hover,
+.leo-search-widget button:hover,
+.leoproductsearch button:hover {
+  background: #28323D !important;
+}
+
+/* --- Cart : couleur noire --- */
+#header .header-nav .blockcart {
+  background: transparent !important;
+}
+
+#header .header-nav .blockcart a,
+#header .header-top .blockcart a {
+  color: #101820 !important;
+}
+
+/* --- Supprimer l'ancienne décoration titre --- */
+.leo-megamenu .navbar-nav > li > a > .menu-title::before,
+.leo-megamenu .navbar-nav > li > a > .menu-title::after {
+  display: none !important;
+}
+
+/* --- Currency selector : noir au lieu de jaune --- */
+.currency-selector li.current a {
+  color: #101820 !important;
+}

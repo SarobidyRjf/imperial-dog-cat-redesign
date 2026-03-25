@@ -1,0 +1,58 @@
+# ============================================================
+# PrestaShop .gitignore
+# ============================================================
+
+# --- Cache & Logs ---
+/var/cache/
+/var/logs/
+/var/log/
+
+# --- Config sensitive ---
+/app/config/parameters.php
+
+# --- Vendor (dependencies) ---
+/vendor/
+
+# --- Uploads & user data ---
+/upload/
+/download/
+/img/p/
+/img/c/
+/img/m/
+/img/su/
+/img/st/
+/img/tmp/
+
+# --- Node ---
+node_modules/
+package-lock.json
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- IDE ---
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# --- Database dumps ---
+*.sql
+*.sql.gz
+
+# --- Backups ---
+/backups/
+
+# --- Temp ---
+/tmp/
+*.tmp
+*.bak
+
+# --- Compiled theme assets (if any) ---
+themes/*/assets/cache/
+
+# --- Modules we don't modify ---
+# (on versionne uniquement nos fichiers custom)

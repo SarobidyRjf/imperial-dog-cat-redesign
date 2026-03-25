@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Design System — Imperial Dog &amp; Cat</title>
+  <link rel="stylesheet" href="css/japhy-design-system.css">
+  <style>
+    .test-section {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .test-section + .test-section {
+      border-top: 1px solid var(--jp-border);
+    }
+    .demo-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .color-swatch {
+      width: 100px;
+      height: 60px;
+      border-radius: 8px;
+      display: flex;
+      align-items: flex-end;
+      padding: 4px 8px;
+      font-size: 11px;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- PROMO BAR -->
+  <div class="jp-promo-bar">
+    ⚡ Offre d'essai : <strong>-50% sur la premiere commande</strong> ⚡
+  </div>
+
+  <!-- SECTION: TYPOGRAPHY -->
+  <div class="test-section">
+    <h2>1. Typographie</h2>
+    <h1>H1 — L'alimentation experte (48px / 26px mobile)</h1>
+    <h2>H2 — Des croquettes 100% sur-mesure (36px)</h2>
+    <h3>H3 — Ingredients de qualite (24px)</h3>
+    <h4>H4 — Comment ca marche (20px)</h4>
+    <h5>H5 — Nos engagements (18px)</h5>
+    <p class="jp-body-large">Body Large — Japhy concoit ses recettes en France, avec un haut niveau d'exigence.</p>
+    <p class="jp-body-regular">Body Regular — Nous selectionnons des ingredients d'origine naturelle, certifies sans colorant.</p>
+    <p class="jp-body-bold">Body Bold — Plus de 45 000 000 repas servis !</p>
+    <p class="jp-small">Small — 13px texte secondaire</p>
+    <p class="jp-text-muted">Text Muted — Information complementaire en gris</p>
+    <p class="jp-handwritten">Handwritten — Fait avec amour !</p>
+  </div>
+
+  <!-- SECTION: COLORS -->
+  <div class="test-section">
+    <h2>2. Palette de couleurs</h2>
+    <div class="demo-grid">
+      <div class="color-swatch" style="background: #101820; color: white;">Dark #101820</div>
+      <div class="color-swatch" style="background: #28323D; color: white;">Hover #28323D</div>
+      <div class="color-swatch" style="background: #F1F3F5; color: #101820;">Light #F1F3F5</div>
+      <div class="color-swatch" style="background: #DFE4E9; color: #101820;">Border #DFE4E9</div>
+      <div class="color-swatch" style="background: #808B96; color: white;">Muted #808B96</div>
+      <div class="color-swatch" style="background: #9BCBEB; color: #101820;">Blue #9BCBEB</div>
+      <div class="color-swatch" style="background: #FFAA47; color: white;">Orange #FFAA47</div>
+      <div class="color-swatch" style="background: #FCFF8A; color: #101820;">CTA #FCFF8A</div>
+      <div class="color-swatch" style="background: #34D399; color: white;">Green #34D399</div>
+      <div class="color-swatch" style="background: #F15B5C; color: white;">Red #F15B5C</div>
+    </div>
+  </div>
+
+  <!-- SECTION: BUTTONS -->
+  <div class="test-section">
+    <h2>3. Boutons</h2>
+    <div class="demo-grid">
+      <a href="#" class="jp-btn jp-btn-primary">Primary Large (48px)</a>
+      <a href="#" class="jp-btn jp-btn-md">Primary Medium (40px)</a>
+      <a href="#" class="jp-btn jp-btn-sm">Primary Small (32px)</a>
+      <a href="#" class="jp-btn jp-btn-secondary">Secondary (outlined)</a>
+      <a href="#" class="jp-btn jp-btn-hero">Hero CTA Jaune</a>
+      <a href="#" class="jp-btn jp-btn-disabled">Disabled</a>
+    </div>
+  </div>
+
+  <!-- SECTION: CARDS -->
+  <div class="test-section">
+    <h2>4. Cards</h2>
+    <div class="demo-grid">
+      <div class="jp-card" style="width: 250px;">
+        <h4>Card Standard</h4>
+        <p class="jp-body-regular">Border-radius 12px, bordure subtile, padding 20px</p>
+      </div>
+      <div class="jp-card-product">
+        <div class="jp-card-product-img">
+          <img src="https://via.placeholder.com/250x250/F1F3F5/101820?text=Produit" alt="Produit">
+        </div>
+        <h4>Croquettes Chien</h4>
+        <p class="jp-small jp-text-muted">A partir de 5,60EUR / kg</p>
+      </div>
+      <div class="jp-card jp-card-primary" style="width: 250px;">
+        <h4>Card Primary</h4>
+        <p class="jp-body-regular">Fond gris #F1F3F5 avec bordure noire</p>
+      </div>
+      <div class="jp-card jp-card-green" style="width: 250px;">
+        <h4>Card Green</h4>
+        <p class="jp-body-regular">Fond vert clair avec bordure verte</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION: BADGES -->
+  <div class="test-section">
+    <h2>5. Badges</h2>
+    <div class="demo-grid">
+      <span class="jp-badge">Default Badge</span>
+      <span class="jp-badge jp-badge-blue">Nouveau</span>
+      <span class="jp-badge jp-badge-orange">Promo -10%</span>
+      <span class="jp-badge jp-badge-green">En stock</span>
+    </div>
+  </div>
+
+  <!-- SECTION: FAQ ACCORDION -->
+  <div class="test-section">
+    <h2>6. FAQ Accordion</h2>
+    <div class="jp-faq-item">
+      <div class="jp-faq-question">
+        Quels sont les ingredients de vos croquettes ?
+        <span class="jp-faq-arrow">&#9660;</span>
+      </div>
+      <div class="jp-faq-answer">
+        Nos croquettes sont fabriquees en France avec des ingredients d'origine naturelle. Sans colorant, sans emulsifiants et sans sucre. 80% des proteines sont d'origine animale.
+      </div>
+    </div>
+    <div class="jp-faq-item">
+      <div class="jp-faq-question">
+        Livrez-vous dans toute la France ?
+        <span class="jp-faq-arrow">&#9660;</span>
+      </div>
+      <div class="jp-faq-answer">
+        Oui, nous livrons dans toute la France metropolitaine via DPD. Livraison a domicile, en relais Pickup ou sur lieu de travail.
+      </div>
+    </div>
+    <div class="jp-faq-item">
+      <div class="jp-faq-question">
+        Comment fonctionne le questionnaire ?
+        <span class="jp-faq-arrow">&#9660;</span>
+      </div>
+      <div class="jp-faq-answer">
+        Repondez a quelques questions sur votre animal (type, age, taille, sterilisation) et nous vous recommandons les croquettes adaptees a ses besoins specifiques.
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION: FORMS -->
+  <div class="test-section">
+    <h2>7. Formulaires</h2>
+    <div style="max-width: 400px;">
+      <div style="margin-bottom: 15px;">
+        <label class="jp-body-bold">Email</label>
+        <input type="email" class="form-control" placeholder="votre@email.com">
+      </div>
+      <div style="margin-bottom: 15px;">
+        <label class="jp-body-bold">Mot de passe</label>
+        <input type="password" class="form-control" placeholder="Mot de passe">
+      </div>
+      <a href="#" class="jp-btn jp-btn-primary" style="width: 100%;">Se connecter</a>
+    </div>
+  </div>
+
+  <!-- SECTION: SPACING -->
+  <div class="test-section">
+    <h2>8. Espacements</h2>
+    <div class="demo-grid">
+      <div style="display: flex; gap: var(--jp-gap-xs); align-items: center;">
+        <div style="width:40px;height:40px;background:var(--jp-blue);border-radius:4px;"></div>
+        <span class="jp-small">gap-xs (6px)</span>
+      </div>
+      <div style="display: flex; gap: var(--jp-gap-sm); align-items: center;">
+        <div style="width:40px;height:40px;background:var(--jp-blue);border-radius:4px;"></div>
+        <span class="jp-small">gap-sm (10px)</span>
+      </div>
+      <div style="display: flex; gap: var(--jp-gap-md); align-items: center;">
+        <div style="width:40px;height:40px;background:var(--jp-blue);border-radius:4px;"></div>
+        <span class="jp-small">gap-md (16px)</span>
+      </div>
+      <div style="display: flex; gap: var(--jp-gap-lg); align-items: center;">
+        <div style="width:40px;height:40px;background:var(--jp-blue);border-radius:4px;"></div>
+        <span class="jp-small">gap-lg (20px)</span>
+      </div>
+      <div style="display: flex; gap: var(--jp-gap-xl); align-items: center;">
+        <div style="width:40px;height:40px;background:var(--jp-blue);border-radius:4px;"></div>
+        <span class="jp-small">gap-xl (40px)</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION: FOOTER PREVIEW -->
+  <div style="background-color: #101820; color: white; padding: 70px 20px; margin-top: 70px;">
+    <div style="max-width: 1100px; margin: 0 auto;">
+      <h2 style="color: white;">9. Footer (fond noir #101820)</h2>
+      <div style="display: flex; gap: 40px; flex-wrap: wrap; margin-top: 30px;">
+        <div>
+          <h4 style="color: white; margin-bottom: 10px;">A propos</h4>
+          <p style="color: rgba(255,255,255,0.7); font-size: 14px; line-height: 2;">Comment ca marche?<br>Notre Histoire<br>Avis clients<br>Aide<br>Nous contacter</p>
+        </div>
+        <div>
+          <h4 style="color: white; margin-bottom: 10px;">Chien</h4>
+          <p style="color: rgba(255,255,255,0.7); font-size: 14px; line-height: 2;">Croquettes<br>Friandises<br>Complements</p>
+        </div>
+        <div>
+          <h4 style="color: white; margin-bottom: 10px;">Chat</h4>
+          <p style="color: rgba(255,255,255,0.7); font-size: 14px; line-height: 2;">Croquettes<br>Friandises<br>Complements</p>
+        </div>
+        <div>
+          <h4 style="color: white; margin-bottom: 10px;">Newsletter</h4>
+          <div style="display: flex; gap: 10px; margin-top: 10px;">
+            <input type="email" class="form-control" placeholder="votre@email.com" style="background: #28323D; border-color: #28323D; color: white; max-width: 250px;">
+            <a href="#" class="jp-btn jp-btn-primary" style="min-width: auto; padding: 0 20px;">Je m'inscris</a>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
+        <span style="color: rgba(255,255,255,0.5); font-size: 13px;">&copy; 2026 Imperial Dog & Cat. Tous droits reserves.</span>
+        <span style="color: rgba(255,255,255,0.5); font-size: 13px;">Mentions legales | CGU | Politique de confidentialite</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/japhy-header.js"></script>
+</body>
+</html>

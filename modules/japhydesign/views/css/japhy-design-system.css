@@ -1,0 +1,965 @@
+/* ============================================================
+   JAPHY DESIGN SYSTEM — Imperial Dog & Cat Redesign
+   Version: 1.0.0
+   Based on: japhy.fr design analysis
+   ============================================================ */
+
+/* ============================================================
+   1. CSS VARIABLES (Design Tokens)
+   ============================================================ */
+:root {
+  /* --- Colors --- */
+  --jp-dark: #101820;
+  --jp-dark-hover: #28323D;
+  --jp-white: #FFFFFF;
+  --jp-bg-light: #F1F3F5;
+  --jp-border: #DFE4E9;
+  --jp-text-muted: #808B96;
+  --jp-blue: #9BCBEB;
+  --jp-blue-light: #CCE4F4;
+  --jp-blue-bg: #ECF8FF;
+  --jp-orange: #FFAA47;
+  --jp-orange-bg: #FFF6E9;
+  --jp-yellow-cta: #FCFF8A;
+  --jp-yellow-cta-hover: #EEF32B;
+  --jp-green: #34D399;
+  --jp-green-bg: #ECFDF5;
+  --jp-red: #F15B5C;
+  --jp-red-bg: #FDCFCF;
+
+  /* --- Typography --- */
+  --jp-font-primary: 'Outfit', 'Geomanist', sans-serif;
+  --jp-font-handwritten: 'Caveat', cursive;
+
+  --jp-fs-h1: 48px;
+  --jp-fs-h2: 36px;
+  --jp-fs-h3: 24px;
+  --jp-fs-h4: 20px;
+  --jp-fs-h5: 18px;
+  --jp-fs-body: 16px;
+  --jp-fs-body-large: 18px;
+  --jp-fs-small: 13px;
+  --jp-fs-xs: 11px;
+  --jp-fs-tiny: 9px;
+
+  --jp-fw-light: 200;
+  --jp-fw-regular: 300;
+  --jp-fw-medium: 400;
+  --jp-fw-bold: 700;
+  --jp-fw-black: 900;
+
+  --jp-lh: 140%;
+
+  /* --- Spacing --- */
+  --jp-section-gap: 70px;
+  --jp-section-padding-mobile: 40px 20px;
+  --jp-section-padding-desktop: 70px 0;
+  --jp-container-max: 1100px;
+  --jp-container-max-xl: 1200px;
+  --jp-gap-xs: 6px;
+  --jp-gap-sm: 10px;
+  --jp-gap-md: 16px;
+  --jp-gap-lg: 20px;
+  --jp-gap-xl: 40px;
+
+  /* --- Border Radius --- */
+  --jp-radius-sm: 4px;
+  --jp-radius-md: 8px;
+  --jp-radius-card: 12px;
+  --jp-radius-product: 16px;
+  --jp-radius-img: 18px;
+  --jp-radius-pill: 26px;
+  --jp-radius-badge: 28px;
+  --jp-radius-circle: 50%;
+
+  /* --- Shadows --- */
+  --jp-shadow-header: 0 0 10px rgba(0, 0, 0, 0.08);
+  --jp-shadow-card: 0 0 0 1px var(--jp-border);
+  --jp-shadow-card-active: 0 0 0 2px var(--jp-dark);
+  --jp-shadow-focus: inset 0 0 0 2px var(--jp-blue);
+
+  /* --- Transitions --- */
+  --jp-transition: 0.3s ease;
+  --jp-transition-fast: 0.15s ease;
+
+  /* --- Z-Index --- */
+  --jp-z-promo: 8000;
+  --jp-z-header: 15000;
+}
+
+/* ============================================================
+   2. GOOGLE FONTS IMPORT
+   Outfit = closest free alternative to Geomanist
+   Caveat = handwritten accent font (like Hanoded)
+   ============================================================ */
+/* Google Fonts loaded via module PHP (registerStylesheet) */
+
+/* ============================================================
+   3. GLOBAL RESET & BASE STYLES
+   ============================================================ */
+body {
+  font-family: var(--jp-font-primary) !important;
+  font-size: var(--jp-fs-body);
+  font-weight: var(--jp-fw-regular);
+  line-height: var(--jp-lh);
+  color: var(--jp-dark);
+  background-color: var(--jp-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* ============================================================
+   4. TYPOGRAPHY
+   ============================================================ */
+h1, .jp-h1 {
+  font-family: var(--jp-font-primary) !important;
+  font-size: var(--jp-fs-h1);
+  font-weight: var(--jp-fw-bold);
+  line-height: var(--jp-lh);
+  color: var(--jp-dark);
+}
+
+h2, .jp-h2 {
+  font-family: var(--jp-font-primary) !important;
+  font-size: var(--jp-fs-h2);
+  font-weight: var(--jp-fw-bold);
+  line-height: var(--jp-lh);
+  color: var(--jp-dark);
+}
+
+h3, .jp-h3 {
+  font-family: var(--jp-font-primary) !important;
+  font-size: var(--jp-fs-h3);
+  font-weight: var(--jp-fw-bold);
+  line-height: var(--jp-lh);
+  color: var(--jp-dark);
+}
+
+h4, .jp-h4 {
+  font-family: var(--jp-font-primary) !important;
+  font-size: var(--jp-fs-h4);
+  font-weight: var(--jp-fw-bold);
+  line-height: var(--jp-lh);
+  color: var(--jp-dark);
+}
+
+h5, .jp-h5 {
+  font-family: var(--jp-font-primary) !important;
+  font-size: var(--jp-fs-h5);
+  font-weight: var(--jp-fw-bold);
+  line-height: var(--jp-lh);
+  color: var(--jp-dark);
+}
+
+.jp-body-large-bold {
+  font-size: var(--jp-fs-body-large);
+  font-weight: var(--jp-fw-bold);
+}
+
+.jp-body-large {
+  font-size: var(--jp-fs-body-large);
+  font-weight: var(--jp-fw-medium);
+}
+
+.jp-body-bold {
+  font-size: var(--jp-fs-body);
+  font-weight: var(--jp-fw-bold);
+}
+
+.jp-body-regular {
+  font-size: var(--jp-fs-body);
+  font-weight: var(--jp-fw-light);
+}
+
+.jp-small-bold {
+  font-size: var(--jp-fs-small);
+  font-weight: var(--jp-fw-bold);
+}
+
+.jp-small {
+  font-size: var(--jp-fs-small);
+  font-weight: var(--jp-fw-regular);
+}
+
+.jp-handwritten {
+  font-family: var(--jp-font-handwritten);
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.jp-text-muted {
+  color: var(--jp-text-muted);
+}
+
+.jp-link {
+  font-size: var(--jp-fs-body);
+  font-weight: var(--jp-fw-regular);
+  text-decoration: underline;
+  color: var(--jp-dark);
+  transition: color var(--jp-transition);
+}
+
+.jp-link:hover {
+  color: var(--jp-dark-hover);
+}
+
+/* ============================================================
+   5. BUTTONS
+   ============================================================ */
+
+/* Base button */
+.jp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  font-family: var(--jp-font-primary);
+  font-size: var(--jp-fs-body);
+  font-weight: var(--jp-fw-bold);
+  line-height: var(--jp-lh);
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  border: none;
+  border-radius: var(--jp-radius-pill);
+  transition: background-color var(--jp-transition), box-shadow var(--jp-transition);
+}
+
+/* Primary button — large (48px) */
+.jp-btn-primary,
+.jp-btn-lg {
+  height: 48px;
+  background-color: var(--jp-dark);
+  color: var(--jp-white);
+}
+
+.jp-btn-primary:hover,
+.jp-btn-lg:hover {
+  background-color: var(--jp-dark-hover);
+  color: var(--jp-white);
+  text-decoration: none;
+}
+
+/* Primary medium (40px) */
+.jp-btn-md {
+  height: 40px;
+  background-color: var(--jp-dark);
+  color: var(--jp-white);
+}
+
+.jp-btn-md:hover {
+  background-color: var(--jp-dark-hover);
+  color: var(--jp-white);
+}
+
+/* Primary small (32px) */
+.jp-btn-sm {
+  height: 32px;
+  font-size: var(--jp-fs-small);
+  background-color: var(--jp-dark);
+  color: var(--jp-white);
+}
+
+.jp-btn-sm:hover {
+  background-color: var(--jp-dark-hover);
+  color: var(--jp-white);
+}
+
+/* Secondary button (outlined) */
+.jp-btn-secondary {
+  height: 48px;
+  background-color: var(--jp-white);
+  color: var(--jp-dark);
+  border: 1px solid var(--jp-dark);
+}
+
+.jp-btn-secondary:hover {
+  box-shadow: inset 0 0 0 5px var(--jp-bg-light);
+  text-decoration: none;
+  color: var(--jp-dark);
+}
+
+/* Hero CTA button (yellow) */
+.jp-btn-hero {
+  height: 53px;
+  background-color: var(--jp-yellow-cta);
+  color: var(--jp-dark-hover);
+  font-weight: var(--jp-fw-bold);
+}
+
+.jp-btn-hero:hover {
+  background-color: var(--jp-yellow-cta-hover);
+  color: var(--jp-dark-hover);
+  text-decoration: none;
+}
+
+/* Disabled */
+.jp-btn-disabled,
+.jp-btn:disabled {
+  background-color: var(--jp-border);
+  color: var(--jp-text-muted);
+  cursor: not-allowed;
+}
+
+/* Focus visible */
+.jp-btn:focus-visible {
+  box-shadow: var(--jp-shadow-focus);
+  outline: none;
+}
+
+/* Full width on mobile */
+@media only screen and (max-width: 599px) {
+  .jp-btn {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .jp-btn {
+    min-width: 244px;
+    width: auto;
+  }
+}
+
+/* ============================================================
+   6. CARDS
+   ============================================================ */
+
+.jp-card {
+  background: var(--jp-white);
+  border-radius: var(--jp-radius-card);
+  padding: 20px;
+  position: relative;
+}
+
+.jp-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: var(--jp-shadow-card);
+  pointer-events: none;
+}
+
+.jp-card-product {
+  background: var(--jp-white);
+  border-radius: var(--jp-radius-product);
+  padding: 20px;
+  width: 230px;
+  height: 100%;
+  position: relative;
+}
+
+.jp-card-product::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  box-shadow: var(--jp-shadow-card);
+  pointer-events: none;
+}
+
+.jp-card-product-img {
+  aspect-ratio: 1;
+  border-radius: var(--jp-radius-img);
+  margin-bottom: 16px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.jp-card-product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--jp-transition);
+}
+
+.jp-card-product:hover .jp-card-product-img img {
+  transform: scale(1.05);
+}
+
+.jp-card-primary {
+  background: var(--jp-bg-light);
+  box-shadow: var(--jp-shadow-card-active);
+}
+
+.jp-card-green {
+  background: var(--jp-green-bg);
+  box-shadow: 0 0 0 2px var(--jp-green);
+}
+
+/* ============================================================
+   7. LAYOUT & CONTAINERS
+   ============================================================ */
+
+.jp-container {
+  max-width: var(--jp-container-max);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media only screen and (min-width: 1904px) {
+  .jp-container {
+    max-width: var(--jp-container-max-xl);
+  }
+}
+
+.jp-section {
+  margin-top: var(--jp-section-gap);
+  padding: var(--jp-section-padding-mobile);
+}
+
+@media only screen and (min-width: 1264px) {
+  .jp-section {
+    padding: var(--jp-section-padding-desktop);
+  }
+}
+
+.jp-section-grey {
+  background-color: var(--jp-bg-light);
+}
+
+.jp-flex {
+  display: flex;
+}
+
+.jp-flex-col {
+  flex-direction: column;
+}
+
+.jp-flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.jp-flex-between {
+  justify-content: space-between;
+}
+
+.jp-gap-xs { gap: var(--jp-gap-xs); }
+.jp-gap-sm { gap: var(--jp-gap-sm); }
+.jp-gap-md { gap: var(--jp-gap-md); }
+.jp-gap-lg { gap: var(--jp-gap-lg); }
+.jp-gap-xl { gap: var(--jp-gap-xl); }
+
+/* ============================================================
+   8. PROMO BAR
+   ============================================================ */
+
+.jp-promo-bar {
+  background-color: var(--jp-blue);
+  color: var(--jp-dark);
+  text-align: center;
+  padding: 12px 10px 8px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  z-index: var(--jp-z-promo);
+  position: relative;
+}
+
+.jp-promo-bar a {
+  color: var(--jp-dark);
+  text-decoration: underline;
+  font-weight: var(--jp-fw-bold);
+}
+
+/* ============================================================
+   9. HEADER
+   ============================================================ */
+
+#header {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--jp-z-header);
+  background: var(--jp-white);
+  transition: transform var(--jp-transition), box-shadow var(--jp-transition);
+}
+
+#header.jp-header-scrolled {
+  box-shadow: var(--jp-shadow-header);
+}
+
+#header.jp-header-hidden {
+  transform: translateY(-100%);
+}
+
+#header .header-top {
+  background: var(--jp-white) !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+#header .header-top .inner {
+  max-width: var(--jp-container-max);
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  min-height: 58px;
+}
+
+/* Header nav links */
+#header .header-nav {
+  background: transparent !important;
+  border: none !important;
+}
+
+/* ============================================================
+   10. FOOTER
+   ============================================================ */
+
+#footer {
+  background-color: var(--jp-dark) !important;
+  color: var(--jp-white) !important;
+}
+
+#footer .footer-center,
+#footer .footer-top,
+#footer .footer-bottom {
+  background-color: var(--jp-dark) !important;
+  color: var(--jp-white) !important;
+}
+
+#footer a {
+  color: var(--jp-white) !important;
+  text-decoration: none;
+  transition: opacity var(--jp-transition);
+}
+
+#footer a:hover {
+  opacity: 0.8;
+}
+
+#footer .title_block,
+#footer h4,
+#footer .h4 {
+  color: var(--jp-white) !important;
+  font-family: var(--jp-font-primary) !important;
+  font-weight: var(--jp-fw-bold);
+  font-size: var(--jp-fs-body);
+  margin-bottom: 10px;
+}
+
+#footer .footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px 0;
+}
+
+/* ============================================================
+   11. PRODUCT MINIATURES (Listings)
+   ============================================================ */
+
+.product-miniature {
+  border-radius: var(--jp-radius-product) !important;
+  overflow: hidden;
+  background: var(--jp-white);
+  transition: box-shadow var(--jp-transition);
+  border: none !important;
+}
+
+.product-miniature:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.product-miniature .thumbnail-container {
+  border-radius: var(--jp-radius-product) !important;
+  overflow: hidden;
+}
+
+.product-miniature .product-thumbnail img {
+  border-radius: var(--jp-radius-img);
+  aspect-ratio: 1;
+  object-fit: cover;
+  transition: transform var(--jp-transition);
+}
+
+.product-miniature:hover .product-thumbnail img {
+  transform: scale(1.05);
+}
+
+.product-miniature .product-title a {
+  font-family: var(--jp-font-primary) !important;
+  font-weight: var(--jp-fw-bold);
+  font-size: var(--jp-fs-body);
+  color: var(--jp-dark);
+  text-decoration: none;
+}
+
+.product-miniature .product-price-and-shipping .price {
+  font-family: var(--jp-font-primary) !important;
+  font-weight: var(--jp-fw-bold);
+  color: var(--jp-dark);
+}
+
+.product-miniature .product-price-and-shipping .regular-price {
+  color: var(--jp-text-muted);
+  text-decoration: line-through;
+}
+
+/* ============================================================
+   12. PRODUCT PAGE
+   ============================================================ */
+
+.product-container h1 {
+  font-family: var(--jp-font-primary) !important;
+  font-size: var(--jp-fs-h2);
+  font-weight: var(--jp-fw-bold);
+  color: var(--jp-dark);
+}
+
+.product-container .product-prices .current-price-value {
+  font-family: var(--jp-font-primary) !important;
+  font-weight: var(--jp-fw-bold);
+  color: var(--jp-dark);
+}
+
+/* Add to cart button */
+.product-container .add-to-cart,
+.add-to-cart {
+  background-color: var(--jp-dark) !important;
+  color: var(--jp-white) !important;
+  border: none !important;
+  border-radius: var(--jp-radius-pill) !important;
+  height: 48px;
+  font-family: var(--jp-font-primary) !important;
+  font-weight: var(--jp-fw-bold) !important;
+  font-size: var(--jp-fs-body) !important;
+  transition: background-color var(--jp-transition) !important;
+}
+
+.product-container .add-to-cart:hover,
+.add-to-cart:hover {
+  background-color: var(--jp-dark-hover) !important;
+}
+
+/* Product tabs */
+.product-container .nav-tabs .nav-link {
+  font-family: var(--jp-font-primary) !important;
+  font-weight: var(--jp-fw-bold);
+  color: var(--jp-text-muted);
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 10px 20px;
+  transition: all var(--jp-transition);
+}
+
+.product-container .nav-tabs .nav-link.active {
+  color: var(--jp-dark);
+  border-bottom-color: var(--jp-dark);
+  background: transparent;
+}
+
+/* ============================================================
+   13. CATEGORY PAGE
+   ============================================================ */
+
+#category h1,
+.page-category h1 {
+  font-family: var(--jp-font-primary) !important;
+  font-size: var(--jp-fs-h2);
+  font-weight: var(--jp-fw-bold);
+  color: var(--jp-dark);
+}
+
+/* Subcategories */
+#subcategories {
+  background: var(--jp-bg-light) !important;
+  color: var(--jp-dark) !important;
+  border-radius: var(--jp-radius-md);
+  padding: 20px;
+}
+
+#subcategories a {
+  color: var(--jp-dark) !important;
+}
+
+/* Active filters */
+.active_filters {
+  background: var(--jp-bg-light);
+  border-radius: var(--jp-radius-md);
+  padding: 15px;
+}
+
+.active_filters .filter-block {
+  background: var(--jp-white);
+  border-radius: var(--jp-radius-pill);
+  padding: 5px 12px;
+  font-size: var(--jp-fs-small);
+}
+
+/* ============================================================
+   14. CHECKOUT & CART
+   ============================================================ */
+
+.cart-grid .cart-container {
+  font-family: var(--jp-font-primary) !important;
+}
+
+.checkout-step .step-title {
+  font-family: var(--jp-font-primary) !important;
+  font-weight: var(--jp-fw-bold);
+}
+
+.checkout-step .btn-primary {
+  background-color: var(--jp-dark) !important;
+  border-radius: var(--jp-radius-pill) !important;
+  border: none !important;
+}
+
+.checkout-step .btn-primary:hover {
+  background-color: var(--jp-dark-hover) !important;
+}
+
+/* ============================================================
+   15. FORMS
+   ============================================================ */
+
+.form-control {
+  border: 1px solid var(--jp-border);
+  border-radius: var(--jp-radius-md);
+  font-family: var(--jp-font-primary);
+  font-size: var(--jp-fs-body);
+  padding: 10px 16px;
+  transition: border-color var(--jp-transition), box-shadow var(--jp-transition);
+}
+
+.form-control:focus {
+  border-color: var(--jp-blue);
+  box-shadow: var(--jp-shadow-focus);
+  outline: none;
+}
+
+/* ============================================================
+   16. FAQ ACCORDION STYLE
+   ============================================================ */
+
+.jp-faq-item {
+  background: var(--jp-bg-light);
+  border-radius: var(--jp-radius-md);
+  padding: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color var(--jp-transition);
+}
+
+.jp-faq-item:hover {
+  background: #E8EAED;
+}
+
+.jp-faq-question {
+  font-weight: var(--jp-fw-bold);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.jp-faq-answer {
+  margin-top: 15px;
+  font-weight: var(--jp-fw-light);
+  display: none;
+}
+
+.jp-faq-item.active .jp-faq-answer {
+  display: block;
+}
+
+.jp-faq-arrow {
+  transition: transform var(--jp-transition);
+}
+
+.jp-faq-item.active .jp-faq-arrow {
+  transform: rotate(-135deg);
+}
+
+/* ============================================================
+   17. BADGES & LABELS
+   ============================================================ */
+
+.jp-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4.5px 12px;
+  border-radius: var(--jp-radius-badge);
+  font-size: var(--jp-fs-small);
+  font-weight: var(--jp-fw-bold);
+  background: var(--jp-bg-light);
+  color: var(--jp-dark);
+}
+
+.jp-badge-blue {
+  background: var(--jp-blue-bg);
+  color: var(--jp-dark);
+}
+
+.jp-badge-orange {
+  background: var(--jp-orange-bg);
+  color: var(--jp-dark);
+}
+
+.jp-badge-green {
+  background: var(--jp-green-bg);
+  color: var(--jp-dark);
+}
+
+/* Product flags override */
+.product-flag {
+  border-radius: var(--jp-radius-badge) !important;
+  font-family: var(--jp-font-primary) !important;
+  font-size: var(--jp-fs-small) !important;
+  font-weight: var(--jp-fw-bold) !important;
+  padding: 4px 12px !important;
+}
+
+.product-flag.new {
+  background: var(--jp-dark) !important;
+  color: var(--jp-white) !important;
+}
+
+.product-flag.on-sale,
+.product-flag.discount {
+  background: var(--jp-orange) !important;
+  color: var(--jp-white) !important;
+}
+
+/* ============================================================
+   18. GLOBAL OVERRIDES (PrestaShop defaults)
+   ============================================================ */
+
+/* Override all btn-primary in PrestaShop */
+.btn-primary {
+  background-color: var(--jp-dark) !important;
+  border-color: var(--jp-dark) !important;
+  border-radius: var(--jp-radius-pill) !important;
+  font-family: var(--jp-font-primary) !important;
+  font-weight: var(--jp-fw-bold) !important;
+  transition: background-color var(--jp-transition) !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: var(--jp-dark-hover) !important;
+  border-color: var(--jp-dark-hover) !important;
+}
+
+.btn-secondary {
+  background-color: var(--jp-white) !important;
+  border: 1px solid var(--jp-dark) !important;
+  border-radius: var(--jp-radius-pill) !important;
+  color: var(--jp-dark) !important;
+  font-family: var(--jp-font-primary) !important;
+  font-weight: var(--jp-fw-bold) !important;
+}
+
+.btn-secondary:hover {
+  box-shadow: inset 0 0 0 5px var(--jp-bg-light) !important;
+}
+
+/* Override breadcrumb */
+.breadcrumb {
+  font-family: var(--jp-font-primary);
+  font-size: var(--jp-fs-small);
+  background: transparent;
+}
+
+.breadcrumb a {
+  color: var(--jp-text-muted);
+}
+
+/* Override pagination */
+.pagination .page-link {
+  border-radius: var(--jp-radius-pill) !important;
+  font-family: var(--jp-font-primary);
+  color: var(--jp-dark);
+  border: 1px solid var(--jp-border);
+}
+
+.pagination .page-item.active .page-link {
+  background-color: var(--jp-dark);
+  border-color: var(--jp-dark);
+  color: var(--jp-white);
+}
+
+/* Override alert/notification */
+.alert {
+  border-radius: var(--jp-radius-md);
+  font-family: var(--jp-font-primary);
+}
+
+/* Override page titles */
+.page-content h1,
+#main h1 {
+  font-family: var(--jp-font-primary) !important;
+  font-weight: var(--jp-fw-bold);
+}
+
+/* Title blocks (appagebuilder) */
+.ApRow .title_block,
+.title_block {
+  font-family: var(--jp-font-primary) !important;
+  font-weight: var(--jp-fw-bold);
+  color: var(--jp-dark);
+}
+
+/* Remove old decorative underline on title_block */
+.ApRow .title_block:before,
+.ApRow .title_block:after {
+  display: none !important;
+}
+
+/* ============================================================
+   19. RESPONSIVE
+   ============================================================ */
+
+/* Mobile: < 600px */
+@media only screen and (max-width: 599px) {
+  h1, .jp-h1 { font-size: 26px; }
+  h2, .jp-h2 { font-size: 23px; }
+  h3, .jp-h3 { font-size: 20px; }
+  h4, .jp-h4 { font-size: 20px; }
+
+  .jp-section {
+    margin-top: 40px;
+  }
+
+  #header .header-top .inner {
+    padding: 10px 15px;
+    min-height: 48px;
+  }
+}
+
+/* Tablet: 600px - 1263px */
+@media only screen and (min-width: 600px) and (max-width: 1263px) {
+  h1, .jp-h1 { font-size: 36px; }
+  h2, .jp-h2 { font-size: 28px; }
+}
+
+/* Desktop: 1264px+ */
+@media only screen and (min-width: 1264px) {
+  .jp-container {
+    padding: 0;
+  }
+}
+
+/* ============================================================
+   20. SCROLLBAR STYLING
+   ============================================================ */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--jp-bg-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--jp-border);
+  border-radius: var(--jp-radius-sm);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--jp-text-muted);
+}

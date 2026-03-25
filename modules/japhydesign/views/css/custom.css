@@ -1,0 +1,281 @@
+/* ============================================================
+   IMPERIAL DOG & CAT — Custom Overrides
+   Loaded AFTER japhy-design-system.css (priority 9100)
+   ============================================================ */
+
+/* --- Promo Bar on Homepage --- */
+.header-banner .inner {
+  background-color: var(--jp-blue);
+  color: var(--jp-dark);
+  text-align: center;
+  padding: 10px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  font-family: var(--jp-font-primary);
+}
+
+/* --- Homepage Block Adjustments --- */
+
+/* Block 2: "De l'aide pour choisir" */
+#block-2 {
+  min-height: 500px;
+  position: relative;
+  margin: 0 auto;
+  border-radius: var(--jp-radius-product);
+  overflow: hidden;
+}
+
+#block-2 .title_block {
+  font-family: var(--jp-font-primary) !important;
+  font-size: var(--jp-fs-h2);
+  font-weight: var(--jp-fw-bold);
+  color: var(--jp-white);
+}
+
+#block-2 .sub-title-widget.sub-title-ap-group {
+  font-family: var(--jp-font-primary) !important;
+  font-size: var(--jp-fs-body);
+  color: var(--jp-white);
+}
+
+/* Block 4: Features with icons */
+#block-4 .title_block {
+  font-family: var(--jp-font-primary) !important;
+  font-size: var(--jp-fs-h3);
+  font-weight: var(--jp-fw-bold);
+}
+
+#block-4 .title-banner {
+  text-align: center;
+  font-size: var(--jp-fs-h3);
+  color: var(--jp-dark);
+  font-family: var(--jp-font-primary) !important;
+}
+
+/* Block 5: Description + values */
+.title-block-5 {
+  font-size: var(--jp-fs-body-large);
+  text-align: center;
+  font-weight: var(--jp-fw-bold);
+  color: var(--jp-dark);
+  font-family: var(--jp-font-primary) !important;
+  line-height: var(--jp-lh);
+}
+
+#block-5 {
+  position: relative;
+}
+
+/* Round icon images */
+#image-1,
+#image-2,
+#image-3,
+#image-4 {
+  border-radius: var(--jp-radius-circle);
+  width: 148px;
+  height: 148px;
+  border: 2px solid var(--jp-white);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform var(--jp-transition);
+}
+
+#image-1:hover,
+#image-2:hover,
+#image-3:hover,
+#image-4:hover {
+  transform: scale(1.05);
+}
+
+/* Block 6: How it works */
+#block-6 {
+  padding: 0;
+}
+
+/* Block 7: Expert contact (hidden on mobile) */
+#block-7 {
+  min-height: auto;
+}
+
+/* --- Stepper (Questionnaire) --- */
+.stepper {
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 100;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.step-number {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--jp-radius-circle);
+  background-color: var(--jp-bg-light);
+  color: var(--jp-text-muted);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  font-weight: var(--jp-fw-bold);
+  font-family: var(--jp-font-primary);
+  transition: all var(--jp-transition);
+}
+
+.step-description {
+  font-size: var(--jp-fs-small);
+  color: var(--jp-text-muted);
+  line-height: 1.2;
+  font-family: var(--jp-font-primary);
+}
+
+.step.active .step-number {
+  background-color: var(--jp-dark);
+  color: var(--jp-white);
+}
+
+.step.active .step-description {
+  color: var(--jp-dark);
+  font-weight: var(--jp-fw-bold);
+}
+
+/* --- Owl Carousel & Slick overrides --- */
+.owl-theme .owl-dots .owl-dot span {
+  background: var(--jp-border) !important;
+  width: 8px;
+  height: 8px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+  background: var(--jp-dark) !important;
+}
+
+.owl-theme .owl-nav .owl-prev,
+.owl-theme .owl-nav .owl-next {
+  background: var(--jp-white) !important;
+  border: 1px solid var(--jp-border) !important;
+  border-radius: var(--jp-radius-circle) !important;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--jp-transition);
+}
+
+.owl-theme .owl-nav .owl-prev:hover,
+.owl-theme .owl-nav .owl-next:hover {
+  background: var(--jp-bg-light) !important;
+}
+
+/* Slick dots */
+.slick-dots li button:before {
+  color: var(--jp-border) !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: var(--jp-dark) !important;
+}
+
+/* --- Subcategories --- */
+#subcategories {
+  background: var(--jp-bg-light) !important;
+  color: var(--jp-dark) !important;
+  border-radius: var(--jp-radius-md);
+  padding: 20px;
+}
+
+#subcategories .subcategory-name a {
+  color: var(--jp-dark) !important;
+  font-family: var(--jp-font-primary);
+  font-weight: var(--jp-fw-bold);
+}
+
+/* --- Cart icon color --- */
+span.hidden-sm-down {
+  color: var(--jp-dark) !important;
+}
+
+/* --- Blog cards --- */
+.blog-item {
+  border-radius: var(--jp-radius-card);
+  overflow: hidden;
+  transition: box-shadow var(--jp-transition);
+}
+
+.blog-item:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.blog-item .more {
+  position: relative;
+}
+
+.blog-item .blog-title a {
+  font-family: var(--jp-font-primary) !important;
+  font-weight: var(--jp-fw-bold);
+  color: var(--jp-dark);
+}
+
+/* --- Subscription products block --- */
+#subscription_products {
+  border: 1px solid var(--jp-border);
+  border-radius: var(--jp-radius-card);
+  background: var(--jp-bg-light);
+  padding: 20px;
+}
+
+#subscription_products .btn {
+  background-color: var(--jp-dark) !important;
+  color: var(--jp-white) !important;
+  border-radius: var(--jp-radius-pill) !important;
+}
+
+/* --- Hide old decorative elements --- */
+.ApRow .title_block:before,
+.ApRow .title_block:after {
+  display: none !important;
+}
+
+/* --- Reassurance blocks --- */
+.blockreassurance_product {
+  border-radius: var(--jp-radius-md);
+}
+
+/* --- Payment hack fix (keep existing) --- */
+#checkout-payment-step .payment-options > div:nth-child(2) {
+  display: none;
+}
+
+/* --- Responsive Adjustments --- */
+@media only screen and (max-width: 599px) {
+  .stepper {
+    display: none;
+  }
+
+  #block-2 {
+    min-height: 350px;
+  }
+
+  #image-1,
+  #image-2,
+  #image-3,
+  #image-4 {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #block-7 {
+    display: none;
+  }
+}
