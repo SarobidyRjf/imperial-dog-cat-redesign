@@ -4,8 +4,8 @@
 
 /* ===== PROMO BAR ===== */
 .jp-promo-bar {
-  background-color: #1b3022;
-  color: rgba(255,255,255,.7);
+  background-color: #1b3022 !important;
+  color: rgba(255,255,255,.7) !important;
   text-align: center;
   padding: 10px 20px;
   font-family: 'Outfit', sans-serif;
@@ -57,8 +57,9 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.jp-header-wrapper.jp-header-scrolled {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+.jp-header-wrapper.jp-header-scrolled,
+.jp-header-wrapper.scrolled {
+  box-shadow: 0 4px 24px rgba(17, 26, 20, 0.08);
 }
 
 .jp-header-wrapper.jp-header-hidden {

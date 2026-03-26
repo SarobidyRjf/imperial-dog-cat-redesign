@@ -1,6 +1,121 @@
 /* ============================================================
    IMPERIAL DOG & CAT — Custom Overrides
-   Loaded AFTER design-system.css
+   Loaded LAST — kills Classic theme blue #24b9d7
    ============================================================ */
 
-/* Will be filled progressively as we redesign each component */
+/* ===== Sticky footer — footer always at bottom ===== */
+html { height: 100%; }
+body { min-height: 100%; display: flex; flex-direction: column; }
+body > main, #page, main { flex: 1; display: flex; flex-direction: column; }
+#wrapper { flex: 1; }
+#footer, footer#footer, .js-footer { margin-top: auto !important; }
+
+/* ===== Hide security monitor badge ===== */
+#prestasecuritymonitor_badge { display: none !important; }
+
+/* ===== KILL Classic blue everywhere ===== */
+a { color: var(--forest, #1b3022); }
+a:hover { color: var(--gold, #c8913a); }
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.focus,
+.btn-primary:not(:disabled):not(.disabled):active {
+  background-color: var(--forest, #1b3022) !important;
+  border-color: var(--forest, #1b3022) !important;
+  color: #fff !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--grove, #2a4a33) !important;
+  border-color: var(--grove, #2a4a33) !important;
+}
+
+/* Links that were #24b9d7 blue */
+a.account, a.logout,
+.forgot-password a,
+.no-account a,
+#authentication a,
+.page-my-account a,
+.page-addresses a,
+.address a,
+.order-confirmation a,
+#wrapper a:not([class]),
+.alert a,
+.cart-summary a,
+.product-line-info a {
+  color: var(--forest, #1b3022) !important;
+}
+
+a.account:hover, a.logout:hover,
+.forgot-password a:hover,
+.no-account a:hover,
+#authentication a:hover,
+.page-my-account a:hover,
+#wrapper a:not([class]):hover,
+.alert a:hover {
+  color: var(--gold, #c8913a) !important;
+}
+
+/* Form focus states — gold instead of blue */
+.form-control:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--gold, #c8913a) !important;
+  box-shadow: 0 0 0 0.2rem rgba(200, 145, 58, 0.25) !important;
+  outline: none !important;
+}
+
+/* Pagination active */
+.pagination .current a,
+.pagination .page-item.active .page-link {
+  background-color: var(--forest, #1b3022) !important;
+  border-color: var(--forest, #1b3022) !important;
+  color: #fff !important;
+}
+
+/* Breadcrumb links */
+.breadcrumb a,
+.breadcrumb li a {
+  color: var(--gray, #6b7068) !important;
+}
+
+.breadcrumb a:hover {
+  color: var(--forest, #1b3022) !important;
+}
+
+/* Product page link colors */
+.product-price, .current-price {
+  color: var(--forest, #1b3022) !important;
+}
+
+/* Tabs active state */
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  color: var(--forest, #1b3022) !important;
+  border-bottom-color: var(--gold, #c8913a) !important;
+  background: transparent !important;
+}
+
+/* Global text selection */
+::selection {
+  background: var(--mist, #d8ead9);
+  color: var(--forest, #1b3022);
+}
+
+/* Fix Classic header-nav that might bleed through */
+#header .header-nav {
+  display: none !important;
+}
+
+#header .header-top {
+  display: none !important;
+}
+
+#header .header-banner {
+  display: none !important;
+}

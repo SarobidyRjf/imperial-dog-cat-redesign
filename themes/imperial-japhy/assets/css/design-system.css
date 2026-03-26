@@ -463,22 +463,7 @@ h5, .jp-h5 {
    8. PROMO BAR
    ============================================================ */
 
-.jp-promo-bar {
-  background-color: var(--jp-blue);
-  color: var(--jp-dark);
-  text-align: center;
-  padding: 12px 10px 8px;
-  font-size: 0.75rem;
-  font-weight: 500;
-  z-index: var(--jp-z-promo);
-  position: relative;
-}
-
-.jp-promo-bar a {
-  color: var(--jp-dark);
-  text-decoration: underline;
-  font-weight: var(--jp-fw-bold);
-}
+/* Promo bar styles moved to header.css */
 
 /* ============================================================
    9. HEADER

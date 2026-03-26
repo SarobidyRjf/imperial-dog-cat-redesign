@@ -113,6 +113,33 @@
     });
   }
 
+  // ===== TRUST STRIP MARQUEE =====
+  var strip = document.querySelector('.trust-strip-inner');
+  if (strip) {
+    var sets = strip.querySelectorAll('.trust-set');
+    if (sets.length >= 2) {
+      var speed = 0.5; // pixels per frame
+      var pos = 0;
+      var setWidth = sets[0].offsetWidth;
+      var paused = false;
+
+      strip.parentElement.addEventListener('mouseenter', function() { paused = true; });
+      strip.parentElement.addEventListener('mouseleave', function() { paused = false; });
+
+      function marquee() {
+        if (!paused) {
+          pos -= speed;
+          if (pos <= -setWidth) {
+            pos = 0;
+          }
+          strip.style.transform = 'translateX(' + pos + 'px)';
+        }
+        requestAnimationFrame(marquee);
+      }
+      requestAnimationFrame(marquee);
+    }
+  }
+
   // ===== PRODUCT ADD TO CART ANIMATION =====
   document.addEventListener('click', function(e) {
     var addBtn = e.target.closest('.prod-add');

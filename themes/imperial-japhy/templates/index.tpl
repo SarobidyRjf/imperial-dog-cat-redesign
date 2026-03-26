@@ -20,29 +20,53 @@
     </div>
   </section>
 
-  {* TRUST STRIP *}
+  {* TRUST STRIP — marquee infini *}
   <div class="trust-strip">
     <div class="trust-strip-inner">
-      <div class="trust-item sr d1">
-        <div class="trust-ico"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+      <div class="trust-set">
+      <div class="trust-item">
+        <div class="trust-ico"><img src="{$urls.base_url}themes/imperial-japhy/assets/img/trust-viande.jpg" alt="Viande fraîche"></div>
         <div><div class="trust-t">65–70% Viande</div><div class="trust-s">fraîche dans nos recettes</div></div>
       </div>
-      <div class="trust-item sr d2">
-        <div class="trust-ico"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+      <div class="trust-item">
+        <div class="trust-ico"><img src="{$urls.base_url}themes/imperial-japhy/assets/img/trust-france.png" alt="France"></div>
         <div><div class="trust-t">Fabriqué en France</div><div class="trust-s">ingrédients sélectionnés</div></div>
       </div>
-      <div class="trust-item sr d3">
-        <div class="trust-ico"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+      <div class="trust-item">
+        <div class="trust-ico"><img src="{$urls.base_url}themes/imperial-japhy/assets/img/trust-cereales.jpg" alt="Sans céréales"></div>
         <div><div class="trust-t">Sans céréales</div><div class="trust-s">haute digestibilité</div></div>
       </div>
-      <div class="trust-item sr d4">
-        <div class="trust-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
+      <div class="trust-item">
+        <div class="trust-ico"><img src="{$urls.base_url}themes/imperial-japhy/assets/img/trust-vet.jpg" alt="Vétérinaires"></div>
         <div><div class="trust-t">Développé par des vétérinaires</div><div class="trust-s">nutritionnistes</div></div>
       </div>
-      <div class="trust-item sr d4">
-        <div class="trust-ico"><svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
+      <div class="trust-item">
+        <div class="trust-ico"><img src="{$urls.base_url}themes/imperial-japhy/assets/img/trust-livraison.jpg" alt="Livraison"></div>
         <div><div class="trust-t">Livraison offerte</div><div class="trust-s">dès 49€ d'achat</div></div>
       </div>
+      </div>{* end trust-set 1 *}
+      <div class="trust-set">
+      <div class="trust-item">
+        <div class="trust-ico"><img src="{$urls.base_url}themes/imperial-japhy/assets/img/trust-viande.jpg" alt="Viande fraîche"></div>
+        <div><div class="trust-t">65–70% Viande</div><div class="trust-s">fraîche dans nos recettes</div></div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-ico"><img src="{$urls.base_url}themes/imperial-japhy/assets/img/trust-france.png" alt="France"></div>
+        <div><div class="trust-t">Fabriqué en France</div><div class="trust-s">ingrédients sélectionnés</div></div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-ico"><img src="{$urls.base_url}themes/imperial-japhy/assets/img/trust-cereales.jpg" alt="Sans céréales"></div>
+        <div><div class="trust-t">Sans céréales</div><div class="trust-s">haute digestibilité</div></div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-ico"><img src="{$urls.base_url}themes/imperial-japhy/assets/img/trust-vet.jpg" alt="Vétérinaires"></div>
+        <div><div class="trust-t">Développé par des vétérinaires</div><div class="trust-s">nutritionnistes</div></div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-ico"><img src="{$urls.base_url}themes/imperial-japhy/assets/img/trust-livraison.jpg" alt="Livraison"></div>
+        <div><div class="trust-t">Livraison offerte</div><div class="trust-s">dès 49€ d'achat</div></div>
+      </div>
+      </div>{* end trust-set 2 *}
     </div>
   </div>
 
@@ -78,120 +102,81 @@
       <a href="{$urls.pages.index}20-chien-adulte-croquettes-sans-cereale-lapin-haute-digestibilite" class="prod-card sr d1">
         <div class="prod-img-wrap">
           <img src="{$urls.base_url}img/p/2/1/21-home_default.jpg" alt="Croquettes Lapin" loading="lazy">
-          <div class="prod-badge">Populaire</div>
+          <span class="prod-atc">Ajouter au panier</span>
         </div>
-        <div class="prod-body">
-          <div class="prod-type">Sans céréales · Haute digestibilité</div>
-          <div class="prod-name">Croquettes sans céréale Lapin</div>
-          <div class="prod-tags"><span class="prod-tag">Sans céréales</span><span class="prod-tag">Digestibilité+</span></div>
-          <div class="prod-footer">
-            <div class="prod-price">25,60€ <small>/ 2kg</small></div>
-          </div>
-        </div>
+        <span class="prod-cat">Croquettes sans céréales</span>
+        <span class="prod-name">Chien adulte — Lapin haute digestibilité</span>
+        <span class="prod-price">Dès <strong>25,60 €</strong> <small>(10,67 €/kg)</small></span>
       </a>
 
       <a href="{$urls.pages.index}26-chien-adulte-croquettes-sans-cereale-light-dinde" class="prod-card sr d2">
         <div class="prod-img-wrap">
           <img src="{$urls.base_url}img/p/2/6/26-home_default.jpg" alt="Croquettes Light Dinde" loading="lazy">
+          <span class="prod-atc">Ajouter au panier</span>
         </div>
-        <div class="prod-body">
-          <div class="prod-type">Light · Sans céréales</div>
-          <div class="prod-name">Croquettes sans céréale Light Dinde</div>
-          <div class="prod-tags"><span class="prod-tag">Light</span><span class="prod-tag">Sans céréales</span></div>
-          <div class="prod-footer">
-            <div class="prod-price">24,40€ <small>/ 2kg</small></div>
-          </div>
-        </div>
+        <span class="prod-cat">Croquettes sans céréales</span>
+        <span class="prod-name">Chien adulte Light — Dinde</span>
+        <span class="prod-price">Dès <strong>24,40 €</strong> <small>(10,17 €/kg)</small></span>
       </a>
 
       <a href="{$urls.pages.index}35-chien-adulte-croquettes-superfood65-agneau" class="prod-card sr d3">
         <div class="prod-img-wrap">
           <img src="{$urls.base_url}img/p/3/5/35-home_default.jpg" alt="Superfood Agneau" loading="lazy">
-          <div class="prod-badge" style="background:var(--grove)">Superfood</div>
+          <span class="prod-atc">Ajouter au panier</span>
         </div>
-        <div class="prod-body">
-          <div class="prod-type">Superfood 65%</div>
-          <div class="prod-name">Croquettes Superfood Agneau</div>
-          <div class="prod-tags"><span class="prod-tag">65% protéines</span><span class="prod-tag">Sans céréales</span></div>
-          <div class="prod-footer">
-            <div class="prod-price">25,00€ <small>/ 2kg</small></div>
-          </div>
-        </div>
+        <span class="prod-cat">Croquettes sans céréales</span>
+        <span class="prod-name">Chien adulte Superfood 65% — Agneau</span>
+        <span class="prod-price">Dès <strong>25,00 €</strong> <small>(10,42 €/kg)</small></span>
       </a>
 
       <a href="{$urls.pages.index}36-chien-adultes-croquettes-sans-cereale-superfood65-boeuf-angus" class="prod-card sr d4">
         <div class="prod-img-wrap">
           <img src="{$urls.base_url}img/p/3/6/36-home_default.jpg" alt="Bœuf Angus Superfood" loading="lazy">
-          <div class="prod-badge" style="background:var(--grove)">Superfood</div>
+          <span class="prod-atc">Ajouter au panier</span>
         </div>
-        <div class="prod-body">
-          <div class="prod-type">Superfood 65%</div>
-          <div class="prod-name">Croquettes Superfood Bœuf Angus</div>
-          <div class="prod-tags"><span class="prod-tag">Bœuf Angus</span><span class="prod-tag">Superfood</span></div>
-          <div class="prod-footer">
-            <div class="prod-price">25,00€ <small>/ 2kg</small></div>
-          </div>
-        </div>
+        <span class="prod-cat">Croquettes sans céréales</span>
+        <span class="prod-name">Chien adulte Superfood 65% — Bœuf Angus</span>
+        <span class="prod-price">Dès <strong>25,00 €</strong> <small>(10,42 €/kg)</small></span>
       </a>
 
       <a href="{$urls.pages.index}39-chien-adulte-croquettes-sans-cereale-superfood65-poulet" class="prod-card sr d1">
         <div class="prod-img-wrap">
           <img src="{$urls.base_url}img/p/3/9/39-home_default.jpg" alt="Superfood Poulet" loading="lazy">
-          <div class="prod-badge" style="background:var(--grove)">Superfood</div>
+          <span class="prod-atc">Ajouter au panier</span>
         </div>
-        <div class="prod-body">
-          <div class="prod-type">Superfood 65%</div>
-          <div class="prod-name">Croquettes Superfood Poulet</div>
-          <div class="prod-tags"><span class="prod-tag">Poulet</span><span class="prod-tag">12kg dispo</span></div>
-          <div class="prod-footer">
-            <div class="prod-price">25,00€ <small>/ 2kg</small></div>
-          </div>
-        </div>
+        <span class="prod-cat">Croquettes sans céréales</span>
+        <span class="prod-name">Chien adulte Superfood 65% — Poulet</span>
+        <span class="prod-price">Dès <strong>27,60 €</strong> <small>(11,50 €/kg)</small></span>
       </a>
 
       <a href="{$urls.pages.index}40-chien-adulte-croquettes-sans-cereale-superfood65-saumon" class="prod-card sr d2">
         <div class="prod-img-wrap">
           <img src="{$urls.base_url}img/p/4/0/40-home_default.jpg" alt="Superfood Saumon" loading="lazy">
-          <div class="prod-badge" style="background:var(--grove)">Superfood</div>
+          <span class="prod-atc">Ajouter au panier</span>
         </div>
-        <div class="prod-body">
-          <div class="prod-type">Superfood 65%</div>
-          <div class="prod-name">Croquettes Superfood Saumon</div>
-          <div class="prod-tags"><span class="prod-tag">Saumon</span><span class="prod-tag">Oméga-3</span></div>
-          <div class="prod-footer">
-            <div class="prod-price">25,00€ <small>/ 2kg</small></div>
-          </div>
-        </div>
+        <span class="prod-cat">Croquettes sans céréales</span>
+        <span class="prod-name">Chien adulte Superfood 65% — Saumon</span>
+        <span class="prod-price">Dès <strong>25,00 €</strong> <small>(10,42 €/kg)</small></span>
       </a>
 
       <a href="{$urls.pages.index}42-chien-adulte-light-croquettes-sans-cereale-superfood65-saumon" class="prod-card sr d3">
         <div class="prod-img-wrap">
           <img src="{$urls.base_url}img/p/4/2/42-home_default.jpg" alt="Light Saumon" loading="lazy">
-          <div class="prod-badge" style="background:var(--copper)">Light / Senior</div>
+          <span class="prod-atc">Ajouter au panier</span>
         </div>
-        <div class="prod-body">
-          <div class="prod-type">Light ou Senior · Superfood</div>
-          <div class="prod-name">Croquettes Light ou Senior Saumon</div>
-          <div class="prod-tags"><span class="prod-tag">Light</span><span class="prod-tag">Senior</span></div>
-          <div class="prod-footer">
-            <div class="prod-price">25,00€ <small>/ 2kg</small></div>
-          </div>
-        </div>
+        <span class="prod-cat">Croquettes sans céréales</span>
+        <span class="prod-name">Chien adulte Light/Senior Superfood — Saumon</span>
+        <span class="prod-price">Dès <strong>25,00 €</strong> <small>(10,42 €/kg)</small></span>
       </a>
 
       <a href="{$urls.pages.index}43-chien-adulte-petite-race-croquettes-sans-cereale-light-dinde" class="prod-card sr d4">
         <div class="prod-img-wrap">
           <img src="{$urls.base_url}img/p/4/3/43-home_default.jpg" alt="Petite Race Light Dinde" loading="lazy">
-          <div class="prod-badge" style="background:var(--copper)">Petite race</div>
+          <span class="prod-atc">Ajouter au panier</span>
         </div>
-        <div class="prod-body">
-          <div class="prod-type">Petite race · Light</div>
-          <div class="prod-name">Croquettes Petite Race Light Dinde</div>
-          <div class="prod-tags"><span class="prod-tag">Petite race</span><span class="prod-tag">Light</span></div>
-          <div class="prod-footer">
-            <div class="prod-price">25,00€ <small>/ 2kg</small></div>
-          </div>
-        </div>
+        <span class="prod-cat">Croquettes sans céréales</span>
+        <span class="prod-name">Chien adulte Petite race Superfood — Dinde</span>
+        <span class="prod-price">Dès <strong>25,00 €</strong> <small>(10,42 €/kg)</small></span>
       </a>
 
     </div>
@@ -312,40 +297,44 @@
       </a>
     </div>
     <div class="blog-grid">
-      <a href="{$urls.pages.index}module/leoblog/blog?id=69" class="blog-card sr d1">
+      <a href="{$urls.pages.index}module/leoblog/blog?id=53" class="blog-card sr d1">
         <div class="blog-img-w">
-          <img src="{$urls.base_url}img/leoblog/b/1/69/850_580/b-imperial dog (9).jpg" alt="L'American Staffordshire Terrier" loading="lazy">
-          <div class="blog-overlay"></div>
+          <img src="{$urls.base_url}img/leoblog/b/1/69/850_580/b-imperial dog (9).jpg" alt="Croquettes sans céréales" loading="lazy">
         </div>
         <div class="blog-body">
-          <div class="blog-cat">Chiens</div>
-          <div class="blog-title">L'American Staffordshire Terrier</div>
-          <div class="blog-meta">17 janvier 2025</div>
-          <span class="blog-read">Lire l'article <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          <div class="blog-cat">Alimentation</div>
+          <div class="blog-title">Croquettes sans gluten : Pourquoi les choisir ?</div>
+          <div class="blog-meta">Comme mot sous avec sous doute entendu parler des croquettes sans gluten. Elles sont de plus en plus prisées par les propriétaires d'animaux.</div>
         </div>
       </a>
-      <a href="{$urls.pages.index}module/leoblog/blog?id=68" class="blog-card sr d2">
+      <a href="{$urls.pages.index}module/leoblog/blog?id=67" class="blog-card sr d2">
         <div class="blog-img-w">
-          <img src="{$urls.base_url}img/leoblog/b/1/68/850_580/b-imperial dog (8).jpg" alt="Le Rottweiler" loading="lazy">
-          <div class="blog-overlay"></div>
+          <img src="{$urls.base_url}img/leoblog/b/1/67/850_580/b-imperial dog (7).jpg" alt="Transition alimentaire" loading="lazy">
         </div>
         <div class="blog-body">
-          <div class="blog-cat">Chiens</div>
-          <div class="blog-title">Le Rottweiler</div>
-          <div class="blog-meta">17 janvier 2025</div>
-          <span class="blog-read">Lire l'article <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          <div class="blog-cat">Alimentation</div>
+          <div class="blog-title">La transition alimentaire chez le chien : mode d'emploi</div>
+          <div class="blog-meta">Si vous êtes décidé d'alimentation pour votre chien, il est important de bien gérer la transition alimentaire.</div>
         </div>
       </a>
-      <a href="{$urls.pages.index}module/leoblog/blog?id=67" class="blog-card sr d3">
+      <a href="{$urls.pages.index}module/leoblog/blog?id=66" class="blog-card sr d3">
         <div class="blog-img-w">
-          <img src="{$urls.base_url}img/leoblog/b/1/67/850_580/b-imperial dog (7).jpg" alt="Législation Transport Chien Chat" loading="lazy">
-          <div class="blog-overlay"></div>
+          <img src="{$urls.base_url}img/leoblog/b/1/66/850_580/b-imperial dog (6).jpg" alt="Croquettes ou pâtée" loading="lazy">
         </div>
         <div class="blog-body">
-          <div class="blog-cat">Conseils</div>
-          <div class="blog-title">La Législation pour Transporter Son Chien ou Chat</div>
-          <div class="blog-meta">16 janvier 2025</div>
-          <span class="blog-read">Lire l'article <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          <div class="blog-cat">Alimentation</div>
+          <div class="blog-title">Croquettes ou pâtée pour mon chat ?</div>
+          <div class="blog-meta">De nombreux propriétaires de chats se demandent quel type de nourriture est le plus adapté à leur félin.</div>
+        </div>
+      </a>
+      <a href="{$urls.pages.index}module/leoblog/blog?id=65" class="blog-card sr d4">
+        <div class="blog-img-w">
+          <img src="{$urls.base_url}img/leoblog/b/1/65/850_580/b-imperial dog (5).jpg" alt="Chat stérilisé" loading="lazy">
+        </div>
+        <div class="blog-body">
+          <div class="blog-cat">Alimentation</div>
+          <div class="blog-title">Chien stérilisé, quelle alimentation choisir ?</div>
+          <div class="blog-meta">La santé nutritionnelle de votre compagnon est essentielle après la stérilisation.</div>
         </div>
       </a>
     </div>
