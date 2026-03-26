@@ -12,7 +12,7 @@
     <div class="hero-content">
       <div class="hero-label sr">Nutrition d'exception</div>
       <h1 class="hero-title sr d1">La nutrition qui<br><em>transforme</em><br>leur vie</h1>
-      <p class="hero-desc sr d2">Des croquettes premium à 65–70% de protéines animales, formulées avec des vétérinaires nutritionnistes pour chaque profil.</p>
+      <p class="hero-desc sr d2">Des croquettes premium à base de viande fraîche, formulées avec des vétérinaires nutritionnistes pour chaque profil.</p>
       <div class="hero-btns sr d3">
         <a href="{$urls.pages.index}5-chien" class="btn-gold">Parcourir les produits <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         <a href="{$urls.pages.index}questionnaire" class="btn-ghost">Commencer le quiz</a>
@@ -25,7 +25,7 @@
     <div class="trust-strip-inner">
       <div class="trust-item sr d1">
         <div class="trust-ico"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
-        <div><div class="trust-t">65–70% Protéines</div><div class="trust-s">animales totales</div></div>
+        <div><div class="trust-t">65–70% Viande</div><div class="trust-s">fraîche dans nos recettes</div></div>
       </div>
       <div class="trust-item sr d2">
         <div class="trust-ico"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
@@ -205,7 +205,7 @@
         <div class="philo-img-overlay"></div>
         <div class="philo-badge">
           <div class="philo-badge-num">65–70%</div>
-          <div class="philo-badge-lbl">PROTÉINES ANIMALES</div>
+          <div class="philo-badge-lbl">VIANDE FRAÎCHE</div>
         </div>
       </div>
       <div class="philo-content sr d2">
@@ -230,7 +230,7 @@
           <div class="philo-feat">
             <div class="philo-feat-icon"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
             <div>
-              <div class="philo-feat-t">65% à 70% de protéines animales totales</div>
+              <div class="philo-feat-t">65% à 70% de viande fraîche</div>
               <p class="philo-feat-d">Un mélange unique en viande fraîche pour une digestibilité élevée.</p>
             </div>
           </div>
@@ -256,7 +256,7 @@
         <div class="pillar-card sr d2">
           <div class="pillar-img"><img src="{$urls.base_url}themes/imperial-japhy/assets/img/icon-quality.jpg" alt="Qualité supérieure"></div>
           <div class="pillar-t">Qualité supérieure</div>
-          <p class="pillar-d">80% de protéines d'origine animale dans chaque recette.</p>
+          <p class="pillar-d">Viande fraîche de qualité supérieure dans chaque recette.</p>
         </div>
         <div class="pillar-card sr d3">
           <div class="pillar-img"><img src="{$urls.base_url}themes/imperial-japhy/assets/img/icon-love.jpg" alt="Fait avec amour"></div>
@@ -312,39 +312,39 @@
       </a>
     </div>
     <div class="blog-grid">
-      <a href="{$urls.pages.index}module/leoblog/blog?id=65" class="blog-card sr d1">
+      <a href="{$urls.pages.index}module/leoblog/blog?id=69" class="blog-card sr d1">
         <div class="blog-img-w">
-          <img src="{$urls.base_url}themes/imperial-japhy/assets/img/blog-1.jpg" alt="Le Siamois">
-          <div class="blog-overlay"></div>
-        </div>
-        <div class="blog-body">
-          <div class="blog-cat">Chats</div>
-          <div class="blog-title">Le Siamois</div>
-          <div class="blog-meta">Tout savoir sur cette race élégante</div>
-          <span class="blog-read">Lire l'article <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
-        </div>
-      </a>
-      <a href="{$urls.pages.index}module/leoblog/blog?id=63" class="blog-card sr d2">
-        <div class="blog-img-w">
-          <img src="{$urls.base_url}themes/imperial-japhy/assets/img/blog-2.jpg" alt="Le Caniche">
+          <img src="{$urls.base_url}img/leoblog/b/1/69/850_580/b-imperial dog (9).jpg" alt="L'American Staffordshire Terrier" loading="lazy">
           <div class="blog-overlay"></div>
         </div>
         <div class="blog-body">
           <div class="blog-cat">Chiens</div>
-          <div class="blog-title">Le Caniche</div>
-          <div class="blog-meta">Race intelligente et hypoallergénique</div>
+          <div class="blog-title">L'American Staffordshire Terrier</div>
+          <div class="blog-meta">17 janvier 2025</div>
           <span class="blog-read">Lire l'article <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
         </div>
       </a>
-      <a href="{$urls.pages.index}module/leoblog/blog?id=66" class="blog-card sr d3">
+      <a href="{$urls.pages.index}module/leoblog/blog?id=68" class="blog-card sr d2">
         <div class="blog-img-w">
-          <img src="{$urls.base_url}themes/imperial-japhy/assets/img/blog-3.jpg" alt="Les Friandises">
+          <img src="{$urls.base_url}img/leoblog/b/1/68/850_580/b-imperial dog (8).jpg" alt="Le Rottweiler" loading="lazy">
           <div class="blog-overlay"></div>
         </div>
         <div class="blog-body">
-          <div class="blog-cat">Nutrition</div>
-          <div class="blog-title">Les Friandises pour votre chien</div>
-          <div class="blog-meta">Allier plaisir et santé</div>
+          <div class="blog-cat">Chiens</div>
+          <div class="blog-title">Le Rottweiler</div>
+          <div class="blog-meta">17 janvier 2025</div>
+          <span class="blog-read">Lire l'article <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+      <a href="{$urls.pages.index}module/leoblog/blog?id=67" class="blog-card sr d3">
+        <div class="blog-img-w">
+          <img src="{$urls.base_url}img/leoblog/b/1/67/850_580/b-imperial dog (7).jpg" alt="Législation Transport Chien Chat" loading="lazy">
+          <div class="blog-overlay"></div>
+        </div>
+        <div class="blog-body">
+          <div class="blog-cat">Conseils</div>
+          <div class="blog-title">La Législation pour Transporter Son Chien ou Chat</div>
+          <div class="blog-meta">16 janvier 2025</div>
           <span class="blog-read">Lire l'article <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
         </div>
       </a>
